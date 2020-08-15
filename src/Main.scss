@@ -1,16 +1,24 @@
-.Main {
-  text-align: center;
-}
+@import './scss/reset';
 
-.Main-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+:root {
+  font-size: 16px;
+
+  --ff-body: 'Raleway', sans-serif;
+  --ff-accent: 'Catamaran', cursive;
+
+  --fs-body: 1rem;
+
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  --color-white: #fcfcfc;     // alabaster
+  --color-blue: #1ea0d2;      // curious blue
+  --color-primary: #ffac10;   // sun
+  --color-copper: #311102;    // buccaneer
+  --color-midnight: #0e1b3d;  // blue zodiac
+
+  --b-radius: .375rem;
 }
 
 .Main-link {
