@@ -2,6 +2,7 @@
 
 
 
+/* ROOT VARIABLE DECLARATIONS */
 :root {
     font-size: 16px;
 
@@ -24,6 +25,7 @@
 
 
 
+/* HELPERS */
 @function rel-size($label) {
     $result: 1rem;
     @if $label == 300 {
@@ -43,8 +45,7 @@
 
 
 
-/* Global CSS starts */
-
+/* GLOBAL CSS STARTS */
 body {
     position: relative;
     padding-bottom: rel-size(600);
@@ -93,6 +94,7 @@ th {
 
 
 
+/* PLAYGROUND */
 // @keyframes App-logo-spin {
 //     from {
 //         transform: rotate(0deg);
