@@ -1,0 +1,27 @@
+// BACKGROUND DIMMING MECHANISM
+
+body {
+    background-color: #171111; // to cover viewport completely when screen is dragged
+    background-image: linear-gradient(180deg, rgba(33, 16, 16, 0.62) 28%,rgba(12, 7, 5, 0.76) 100%), 
+        url(../assets/images/backgrounds/contemp-comp-gtm.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    background-attachment: fixed;
+}
+
+.background-dimmer {
+    z-index: -10;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: #08080899;
+
+    opacity: 0;
+    transition: opacity .8s ease-out 1s;
+
+    &.show { opacity: 1; }
+}
