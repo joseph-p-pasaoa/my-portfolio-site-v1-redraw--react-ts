@@ -45,6 +45,14 @@
     @return $result;
 }
 
+@mixin flex-straight($direction: row, $justify-content: flex-start, $align-items: flex-start) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: nowrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
 
 
 /* GLOBAL CSS STARTS */
@@ -96,7 +104,18 @@ th {
 
 
 
+/* LAYOUT */
+.base-layout {
+    @include flex-straight(column, flex-start, center);
+}
+
+
+
 /* PLAYGROUND */
+.paragraph-copy {
+    width: 12rem;
+}
+
 // @keyframes App-logo-spin {
 //     from {
 //         transform: rotate(0deg);
@@ -105,7 +124,3 @@ th {
 //         transform: rotate(360deg);
 //     }
 // }
-
-.text {
-    width: 12rem;
-}
