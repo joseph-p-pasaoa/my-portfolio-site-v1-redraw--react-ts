@@ -1,8 +1,9 @@
 /* IMPORTS */
-@import "~bootstrap/scss/bootstrap";   // necessary for react-bootstrap styling
+@import "~bootstrap/scss/bootstrap";        // necessary for react-bootstrap styling
+@import "./styles/hamburgers/hamburgers";   // styling for hamburger animations (https://jonsuh.com/hamburgers/)
 
-@import './styles/reset';              // modern reset by Andy Bell
-@import './styles/backgrounds';        // all layout-related backgrounds
+@import './styles/reset';                   // modern reset by Andy Bell
+@import './styles/backgrounds';             // all layout-related backgrounds
 
 
 

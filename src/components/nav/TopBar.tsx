@@ -22,13 +22,29 @@ const ContextAwareToggle: React.FC<Props> = ({ children, eventKey, callback }) =
    const isCurrentEventKey = currentEventKey === eventKey;
    
    return (
+      // <button
+      //    type="button"
+      //    style={{ backgroundColor: isCurrentEventKey ? 'pink' : 'lavender' }}
+      //    onClick={decoratedOnClick}
+      // >
+      //    {children}
+      // </button>
       <button
+         className={`hamburger hamburger--arrowturn ${isCurrentEventKey ? 'is-active' : ''}`}
          type="button"
-         style={{ backgroundColor: isCurrentEventKey ? 'pink' : 'lavender' }}
          onClick={decoratedOnClick}
       >
-         {children}
+         <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
+         </span>
       </button>
+      // <button
+      //    type="button"
+      //    style={{ backgroundColor: isCurrentEventKey ? 'pink' : 'lavender' }}
+      //    onClick={decoratedOnClick}
+      // >
+      //    {children}
+      // </button>
    );
 }
 
@@ -44,10 +60,10 @@ const TopBar = () => {
             <Accordion.Collapse eventKey="0">
                <>Hello! I'm the body</>
             </Accordion.Collapse>
-            <ContextAwareToggle eventKey="1">Click me!</ContextAwareToggle>
+            {/* <ContextAwareToggle eventKey="1">Click me!</ContextAwareToggle>
             <Accordion.Collapse eventKey="1">
                <>Hello! I'm another body</>
-            </Accordion.Collapse>
+            </Accordion.Collapse> */}
          </Accordion>
          TopBar
       </section>

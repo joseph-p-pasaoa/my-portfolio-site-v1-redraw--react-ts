@@ -1,0 +1,32 @@
+@if index($hamburger-types, arrowturn) {
+  /*
+   * Arrow Turn
+   */
+  .hamburger--arrowturn.is-active {
+    .hamburger-inner {
+      transform: rotate(-630deg);
+
+      &::before {
+        transform: translate3d(8px, 0, 0) rotate(-495deg) scale(0.7, 1);
+      }
+
+      &::after {
+        transform: translate3d(8px, 0, 0) rotate(-405deg) scale(0.7, 1);
+      }
+    }
+  }
+  // ORIGINAL (edited to over-rotate arrow into down position)
+  // .hamburger--arrowturn.is-active {
+  //   .hamburger-inner {
+  //     transform: rotate(-180deg);
+
+  //     &::before {
+  //       transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
+  //     }
+
+  //     &::after {
+  //       transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
+  //     }
+  //   }
+  // }
+}
