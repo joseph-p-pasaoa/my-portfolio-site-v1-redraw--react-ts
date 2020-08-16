@@ -107,7 +107,7 @@ th {
 
 
 /* LAYOUT */
-.base-layout {
+.layout-base {
     @include flex-straight(column, flex-start, center);
 }
 
