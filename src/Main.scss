@@ -2,7 +2,7 @@
 @import "~bootstrap/scss/bootstrap";   // necessary for react-bootstrap styling
 
 @import './styles/reset';              // modern reset by Andy Bell
-@import './styles/background';         // background dimming mechanism
+@import './styles/backgrounds';        // all layout-related backgrounds
 
 
 
@@ -47,7 +47,7 @@
     @return $result;
 }
 
-@mixin flex-straight($direction: row, $justify-content: flex-start, $align-items: flex-start) {
+@mixin flex-straight($direction: row, $justify-content: flex-start, $align-items: stretch) {
     display: flex;
     flex-direction: $direction;
     flex-wrap: nowrap;
@@ -108,7 +108,7 @@ th {
 
 /* LAYOUT */
 .layout-base {
-    @include flex-straight(column, flex-start, center);
+    @include flex-straight(column);
 }
 
 
