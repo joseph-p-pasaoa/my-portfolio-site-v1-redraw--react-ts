@@ -99,11 +99,18 @@ th {
     text-align: left;
 }
 
-:focus {
-    outline: 2px dotted;
+:focus,
+button:focus {
+    outline: #fff solid 2px;
     outline-offset: 0.25rem;
+    animation: flash-outline 1s ease-in .5s infinite alternate;
 }
 
+@keyframes flash-outline {
+    to {
+        outline-color: #fff0;
+    }
+}
 
 
 /* LAYOUT */
