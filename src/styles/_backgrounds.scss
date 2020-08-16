@@ -31,8 +31,10 @@ body {
 // TOPBAR BACKGROUND
 
 .topbar {
-    position: relative;
+    position: sticky;
+    top: 0;
     padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .topbar__background {
