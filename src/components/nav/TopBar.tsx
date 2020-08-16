@@ -22,13 +22,6 @@ const ContextAwareToggle: React.FC<Props> = ({ children, eventKey, callback }) =
    const isCurrentEventKey = currentEventKey === eventKey;
    
    return (
-      // <button
-      //    type="button"
-      //    style={{ backgroundColor: isCurrentEventKey ? 'pink' : 'lavender' }}
-      //    onClick={decoratedOnClick}
-      // >
-      //    {children}
-      // </button>
       <button
          className={`hamburger hamburger--arrowturn ${isCurrentEventKey ? 'is-active' : ''}`}
          type="button"
@@ -38,13 +31,6 @@ const ContextAwareToggle: React.FC<Props> = ({ children, eventKey, callback }) =
             <span className="hamburger-inner"></span>
          </span>
       </button>
-      // <button
-      //    type="button"
-      //    style={{ backgroundColor: isCurrentEventKey ? 'pink' : 'lavender' }}
-      //    onClick={decoratedOnClick}
-      // >
-      //    {children}
-      // </button>
    );
 }
 
@@ -58,14 +44,29 @@ const TopBar = () => {
          <Accordion defaultActiveKey="0">
             <ContextAwareToggle eventKey="0">Click me!</ContextAwareToggle>
             <Accordion.Collapse eventKey="0">
-               <>Hello! I'm the body</>
+                  <ul className="topbar-nav-list">
+                     <li className="nav-item">
+                        <a href=".dummy" className="nav-link">
+                           TopBar
+                        </a>
+                     </li>
+                     <li className="nav-item">
+                        <a href=".dummy" className="nav-link">
+                           Link 2
+                        </a>
+                     </li>
+                     <li className="nav-item">
+                        <a href=".dummy" className="nav-link">
+                           Link 3
+                        </a>
+                     </li>
+                  </ul>
             </Accordion.Collapse>
             {/* <ContextAwareToggle eventKey="1">Click me!</ContextAwareToggle>
             <Accordion.Collapse eventKey="1">
                <>Hello! I'm another body</>
             </Accordion.Collapse> */}
          </Accordion>
-         TopBar
       </section>
    );
 }
