@@ -1,6 +1,8 @@
 /* IMPORTS */
-@import './styles/reset';             // modern reset by Andy Bell
-@import './styles/background';        // background dimming mechanism
+@import "~bootstrap/scss/bootstrap";   // necessary for react-bootstrap styling
+
+@import './styles/reset';              // modern reset by Andy Bell
+@import './styles/background';         // background dimming mechanism
 
 
 
