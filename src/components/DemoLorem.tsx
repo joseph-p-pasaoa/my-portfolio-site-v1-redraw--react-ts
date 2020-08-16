@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 const DemoLorem = () => {
 	return(
@@ -16,6 +17,8 @@ const DemoLorem = () => {
 			<p className="paragraph-copy">I'm looking to find an <strong>rich and diverse environment</strong> where I can grow doubly as an engineer and as a <strong>teammate</strong>.</p>
 
 			<p className="paragraph-copy">Thank you for visiting. Please, have a fun look around!</p>
+
+			<Button>False</Button>
 		</>
 	);
 }
