@@ -25,3 +25,22 @@ body {
 
     &.show { opacity: 1; }
 }
+
+
+
+// TOPBAR BACKGROUND
+
+.topbar {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.topbar__background {
+    z-index: -10;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #b17029 22%, #481b0a);
+    clip-path: polygon(0px 0px, 100% 0px, 100% 84%, 10.9% 100%, 0px 91%);
+}

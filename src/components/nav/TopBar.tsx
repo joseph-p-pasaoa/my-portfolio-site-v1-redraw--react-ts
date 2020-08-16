@@ -37,6 +37,8 @@ const TopBar = () => {
 
    return(
       <section className='topbar'>
+         <figure className="topbar__background"></figure>
+
          <Accordion defaultActiveKey="0">
             <ContextAwareToggle eventKey="0">Click me!</ContextAwareToggle>
             <Accordion.Collapse eventKey="0">
