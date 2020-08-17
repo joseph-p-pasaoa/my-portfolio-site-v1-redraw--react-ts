@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
-const DemoLorem = () => {
+const HomePage = () => {
 	return(
 		<>
 			Hello! My name is...<br />
@@ -24,4 +24,4 @@ const DemoLorem = () => {
 }
 
 
-export default DemoLorem;
+export default HomePage;
