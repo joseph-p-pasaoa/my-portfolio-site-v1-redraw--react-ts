@@ -4,6 +4,7 @@
 @import "./styles/hamburgers/hamburgers";   // styling for hamburger animations (https://jonsuh.com/hamburgers/)
 
 @import './styles/reset';                   // modern reset by Andy Bell
+@import './styles/utilities';
 @import './styles/backgrounds';             // all layout-related backgrounds
 @import "./styles/hamburger-animation";     // customizes hamburger animation
 
@@ -32,35 +33,7 @@
 
 
 
-/* HELPERS */
-@function rel-size($label) {
-    $result: 1rem;
-    @if $label == 300 {
-        $result: $result * .8;
-    } @else if $label == 500 {
-        $result: $result * 1.25;
-    } @else if $label == 600 {
-        $result: $result * 1.6;
-    } @else if $label == 700 {
-        $result: $result * 2;
-    } @else if $label == 900 {
-        $result: $result * 3;
-    }
-
-    @return $result;
-}
-
-@mixin flex-straight($direction: row, $justify-content: flex-start, $align-items: stretch) {
-    display: flex;
-    flex-direction: $direction;
-    flex-wrap: nowrap;
-    justify-content: $justify-content;
-    align-items: $align-items;
-}
-
-
-
-/* GLOBAL CSS STARTS */
+/* GLOBALS */
 body {
     position: relative;
     padding-bottom: rel-size(600);
@@ -114,6 +87,7 @@ button:focus {
         outline-color: #fff0;
     }
 }
+
 
 
 /* LAYOUT */
