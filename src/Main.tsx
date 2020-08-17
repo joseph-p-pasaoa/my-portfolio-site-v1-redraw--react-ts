@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Main.scss';
-import TopBar from './components/nav/TopBar';
+import TopBar from './components/TopBar';
 import DemoLorem from './components/DemoLorem';
 
 
