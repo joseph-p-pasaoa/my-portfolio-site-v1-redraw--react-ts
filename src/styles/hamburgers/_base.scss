@@ -66,10 +66,8 @@
     border-radius: $hamburger-layer-border-radius;
     position: absolute;
     transition-property: transform;
-    // transition-duration: 0.15s;
-    transition-duration: .6s;
-    // transition-timing-function: ease;
-    transition-timing-function: ease-in-out;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
   }
 
   &::before,

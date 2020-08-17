@@ -1,0 +1,24 @@
+// _ARROWTURN.SCSS OVERRIDES
+.hamburger--arrowturn.is-active {
+    .hamburger-inner {
+      transform: rotate(-630deg) scale(0.8, 1);
+
+      &::before {
+        transform: translate3d(10px, 4px, 0) rotate(-495deg) scale(0.5, 1);
+      }
+
+      &::after {
+        transform: translate3d(10px, -4px, 0) rotate(-405deg) scale(0.5, 1);
+      }
+    }
+}
+
+// _BASE.SCSS OVERRIDES
+.hamburger-inner {  
+    &,
+    &::before,
+    &::after {
+        transition-duration: .6s;
+        transition-timing-function: ease-in-out;
+    }
+}
