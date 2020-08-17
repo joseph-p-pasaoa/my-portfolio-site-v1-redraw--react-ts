@@ -1,6 +1,8 @@
 import React from 'react'
 
+import NameBox from './Bars/NameBox';
 import TopNavAccordion from './Bars/TopNavAccordion';
+import NavListItems from './Bars/NavListItems';
 
 
 const TopBar = () => {
@@ -8,26 +10,13 @@ const TopBar = () => {
    return(
       <section className='topbar'>
          <figure className="topbar__background"></figure>
+         <NameBox />
 
          <TopNavAccordion>
             <nav>
                <ul className="topbar-nav-list">
 
-                  <li className="nav-item">
-                     <a href=".dummy" className="nav-link">
-                        TopBar
-                     </a>
-                  </li>
-                  <li className="nav-item">
-                     <a href=".dummy" className="nav-link">
-                        Link 2
-                     </a>
-                  </li>
-                  <li className="nav-item">
-                     <a href=".dummy" className="nav-link">
-                        Link 3
-                     </a>
-                  </li>
+                  <NavListItems />
 
                </ul>
             </nav>

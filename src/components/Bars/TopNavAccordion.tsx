@@ -10,7 +10,7 @@ interface TopNavAccordionProps {
 
 const TopNavAccordion: React.FC<TopNavAccordionProps> = ({ children }) => {
    return(
-      <Accordion>
+      <Accordion defaultActiveKey="">
          <ContextAwareToggle eventKey="0" />
          <Accordion.Collapse eventKey="0">
 
