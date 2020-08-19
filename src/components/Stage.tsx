@@ -7,14 +7,14 @@ interface StageProps {
 
 
 const Stage: React.FC<StageProps> = ({ children }) => {
-   const handleStageClick = useAccordionToggle("");
+   const handleClick = useAccordionToggle("");
 
    return (
-      <div className="stage" onClick={handleStageClick}>
+      <div className="stage" onClick={handleClick}>
          {children}
       </div>
    );
 }
 
 
-   export default Stage;
+export default Stage;
