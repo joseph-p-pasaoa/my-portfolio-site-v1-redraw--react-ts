@@ -27,6 +27,13 @@
     align-items: $align-items;
 }
 
+@mixin neutral-link() {
+    &:link, &:visited {
+        color: var(--color-white);
+        text-decoration: none;
+    }
+}
+
 
 
 .flow > * + * {
