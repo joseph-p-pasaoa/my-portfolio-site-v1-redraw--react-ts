@@ -2,14 +2,14 @@ import React, { useContext } from 'react'
 import AccordionContext from 'react-bootstrap/AccordionContext';
 import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 
-interface ContextAwareToggleProps {
+interface NavHamburgerProps {
    children?: React.ReactNode;
    eventKey: string;
    callback?: (value: string) => void;
 }
 
 
-const ContextAwareToggle: React.FC<ContextAwareToggleProps> = ({ children, eventKey, callback }) => {
+const NavHamburger: React.FC<NavHamburgerProps> = ({ children, eventKey, callback }) => {
    const currentEventKey = useContext(AccordionContext);
    
    const decoratedOnClick = useAccordionToggle(
@@ -33,4 +33,4 @@ const ContextAwareToggle: React.FC<ContextAwareToggleProps> = ({ children, event
 }
 
 
-export default ContextAwareToggle;
+export default NavHamburger;

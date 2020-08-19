@@ -1,43 +1,48 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
+import Accordion from 'react-bootstrap/Accordion';
 
 import NameBox from './Bars/NameBox';
-import TopNavAccordion from './Bars/TopNavAccordion';
+import NavHamburger from './Bars/NavHamburger';
 import NavListItems from './Bars/NavListItems';
+
 
 /**
  * Hook that alerts clicks outside of the passed ref
  */
-function useOutsideAlerter(ref: any) {
-   useEffect(() => {
-      /**
-      * Alert if clicked on outside of element
-      */
-      function handleClickOutside(event: any) {
-         if (ref.current && !ref.current.contains(event.target)) {
-               alert("You clicked outside of me!");
-         }
-      }
+// function useOutsideAlerter(ref: any) {
+//    useEffect(() => {
+//       /**
+//       * Alert if clicked on outside of element
+//       */
+//       function handleClickOutside(event: any) {
+//          if (ref.current && !ref.current.contains(event.target)) {
+//                alert("You clicked outside of me!");
+//          }
+//       }
 
-      // Bind the event listener
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-         // Unbind the event listener on clean up
-         document.removeEventListener("mousedown", handleClickOutside);
-      };
-   }, [ref]);
-}
+//       // Bind the event listener
+//       document.addEventListener("mousedown", handleClickOutside);
+//       return () => {
+//          // Unbind the event listener on clean up
+//          document.removeEventListener("mousedown", handleClickOutside);
+//       };
+//    }, [ref]);
+// }
 
 
 const TopBar = () => {
-   const wrapperRef = useRef<HTMLDivElement>(null);
-   useOutsideAlerter(wrapperRef);
+   // const wrapperRef = useRef<HTMLDivElement>(null);
+   // useOutsideAlerter(wrapperRef);
 
    return(
-      <section className='topbar' ref={wrapperRef}>
+      <section className='topbar'>
          <figure className="topbar__background"></figure>
+
          <NameBox />
 
-         <TopNavAccordion>
+         <NavHamburger eventKey="0" />
+         <Accordion.Collapse eventKey="0">
+
             <nav className="topbar__nav">
                <ul className="nav-list flow">
 
@@ -45,7 +50,8 @@ const TopBar = () => {
 
                </ul>
             </nav>
-         </TopNavAccordion>
+
+         </Accordion.Collapse>
       </section>
    );
 }
