@@ -98,6 +98,7 @@ th {
 .layout-base {
     @include flex-straight(column);
     height: 100%;
+    overflow-y: auto;
 }
 
 .stage {
