@@ -4,22 +4,22 @@ import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 
 
 const NavListItems = () => {
-   const handleClick = useAccordionToggle("");
+   const toggleNavCollapse = useAccordionToggle("");
 
    return (
       <>
          <li className="nav-item">
-            <NavLink exact to={`/`} className="nav-link" onClick={handleClick}>
+            <NavLink exact to={`/`} className="nav-link" onClick={toggleNavCollapse}>
                <div>Home</div>
             </NavLink>
          </li>
          <li className="nav-item">
-            <NavLink to={`/projects`} className="nav-link" onClick={handleClick}>
+            <NavLink to={`/projects`} className="nav-link" onClick={toggleNavCollapse}>
                <div>Projects</div>
             </NavLink>
          </li>
          <li className="nav-item">
-            <NavLink to={`/skills`} className="nav-link" onClick={handleClick}>
+            <NavLink to={`/skills`} className="nav-link" onClick={toggleNavCollapse}>
                <div>Skills</div>
             </NavLink>
          </li>
@@ -34,7 +34,7 @@ const NavListItems = () => {
             </a>
          </li> */}
          <li className="nav-item">
-            <a href="https://www.josephpasaoa.com" target="_blank" rel="noopener noreferrer" className="nav-link" onClick={handleClick}>
+            <a href="https://www.josephpasaoa.com" target="_blank" rel="noopener noreferrer" className="nav-link" onClick={toggleNavCollapse}>
                <div>Photography</div>
             </a>
          </li>
@@ -44,7 +44,7 @@ const NavListItems = () => {
             </NavLink>
          </li> */}
          {/* <li className="nav-item">
-            <NavLink to={`/contactme`} className="nav-link" onClick={handleClick}>
+            <NavLink to={`/contactme`} className="nav-link" onClick={toggleNavCollapse}>
                <div>Contact Me <FontAwesomeIcon icon={["far", "edit"]} className="faicon--iconbar" /></div>
             </NavLink>
          </li> */}

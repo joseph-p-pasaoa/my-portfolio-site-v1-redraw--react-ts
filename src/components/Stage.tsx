@@ -7,10 +7,10 @@ interface StageProps {
 
 
 const Stage: React.FC<StageProps> = ({ children }) => {
-   const handleClick = useAccordionToggle("");
+   const toggleNavCollapse = useAccordionToggle("");
 
    return (
-      <div className="stage" onClick={handleClick}>
+      <div className="stage" onClick={toggleNavCollapse}>
          {children}
       </div>
    );
