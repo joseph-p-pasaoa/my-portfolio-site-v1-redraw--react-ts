@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const NameBox = () => {
+const BrandBox = () => {
+   const toggleNavCollapse = useAccordionToggle("");
+
    return (
       <div className="namebox">
          {/* <Link */}
@@ -14,4 +16,4 @@ const NameBox = () => {
 }
 
 
-export default NameBox;
+export default BrandBox;

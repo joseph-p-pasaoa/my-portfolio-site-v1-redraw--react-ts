@@ -1,7 +1,7 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 
-import NameBox from './Bars/NameBox';
+import BrandBox from './Bars/BrandBox';
 import NavHamburger from './Bars/NavHamburger';
 import NavListItems from './Bars/NavListItems';
 
@@ -11,7 +11,7 @@ const TopBar = () => {
       <section className='topbar'>
          <figure className="topbar__background"></figure>
 
-         <NameBox />
+         <BrandBox />
 
          <NavHamburger eventKey="0" />
          <Accordion.Collapse eventKey="0">
