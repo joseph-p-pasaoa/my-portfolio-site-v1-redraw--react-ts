@@ -1,5 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faEdit, faFileAlt } from '@fortawesome/free-regular-svg-icons';
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import './Main.scss';
 import LayoutBase from './components/LayoutBase';
@@ -7,6 +10,9 @@ import TopBar from './components/TopBar';
 import Stage from './components/Stage';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
+
+// activate and populate FontAwesome sitewide icon library
+library.add(faEdit, faFileAlt, faGithubSquare, faLinkedin);
 
 
 export default function Main() {
