@@ -36,8 +36,11 @@
 
 
 
-.flow > * + * {
+.flow--col > * + * {
     margin-top: var(--flow-space, 1rem);
+}
+.flow--row > * + * {
+    margin-left: var(--flow-space, 1rem);
 }
 
 .visually-hidden {
