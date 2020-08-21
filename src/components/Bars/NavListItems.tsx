@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 
+const myResume = require('../../assets/docs/Full-Stack_Developer_Resume_(Joseph_P_Passoa).pdf');
 
 const NavListItems = () => {
    const toggleNavCollapse = useAccordionToggle("");
@@ -9,8 +10,13 @@ const NavListItems = () => {
    return (
       <>
          <li className="nav-item">
-            <NavLink exact to={`/`} className="nav-link" onClick={toggleNavCollapse}>
-               <div>Home</div>
+            <a href={myResume} target="_blank" rel="noopener noreferrer" className="nav-link">
+               <div>Resume</div>
+            </a>
+         </li>
+         <li className="nav-item">
+            <NavLink to={`/skills`} className="nav-link" onClick={toggleNavCollapse}>
+               <div>Skills</div>
             </NavLink>
          </li>
          <li className="nav-item">
@@ -18,20 +24,10 @@ const NavListItems = () => {
                <div>Projects</div>
             </NavLink>
          </li>
-         <li className="nav-item">
-            <NavLink to={`/skills`} className="nav-link" onClick={toggleNavCollapse}>
-               <div>Skills</div>
-            </NavLink>
-         </li>
          {/* <li className="nav-item">
             <NavLink to={`/blog`} className="nav-link">
                <div>Blog</div>
             </NavLink>
-         </li> */}
-         {/* <li className="nav-item">
-            <a href={joeysResume} target="_blank" rel="noopener noreferrer" className="nav-link">
-               <div>Resume</div>
-            </a>
          </li> */}
          <li className="nav-item">
             <a href="https://www.josephpasaoa.com" target="_blank" rel="noopener noreferrer" className="nav-link" onClick={toggleNavCollapse}>
@@ -48,6 +44,11 @@ const NavListItems = () => {
                <div>Contact Me <FontAwesomeIcon icon={["far", "edit"]} className="faicon--iconbar" /></div>
             </NavLink>
          </li> */}
+         <li className="nav-item">
+            <NavLink exact to={`/`} className="nav-link" onClick={toggleNavCollapse}>
+               <div>Home</div>
+            </NavLink>
+         </li>
       </>
    );
 }
