@@ -58,6 +58,16 @@
             color: var(--color-black);
         }
     }
+
+    .brand__icons {
+        @include flex-straight(row);
+    }
+
+    .icon-fontawesome {
+        margin: 2rem 1rem 0 0;
+        font-size: 3rem;
+        color: var(--color-midnight);
+    }
 }
 
 .nav-item {
