@@ -36,6 +36,10 @@
 
 
 
+.page__container {
+    margin: .5rem 5% 2.11rem;
+}
+
 .flow--col > * + * {
     margin-top: var(--flow-space, 1rem);
 }
