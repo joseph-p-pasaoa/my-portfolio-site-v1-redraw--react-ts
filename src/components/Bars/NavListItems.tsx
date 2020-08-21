@@ -20,8 +20,8 @@ const NavListItems = () => {
             </NavLink>
          </li>
          <li className="nav-item">
-            <NavLink to={`/projects`} className="nav-link" onClick={toggleNavCollapse}>
-               <div>Projects</div>
+            <NavLink to={`/builds`} className="nav-link" onClick={toggleNavCollapse}>
+               <div>Builds</div>
             </NavLink>
          </li>
          {/* <li className="nav-item">
