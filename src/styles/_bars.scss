@@ -98,6 +98,8 @@
 .topbar {
     @include flex-straight(column, flex-start, flex-end);
 
+    z-index: 1000;
+
     .hamburger {
 
         &:focus {
