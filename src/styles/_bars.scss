@@ -167,6 +167,29 @@
             // }
         }
     }
+
+    .nav-collapse { // needed to extend topbar__nav to full width
+        width: 100%;
+    }
+
+    &__nav {
+        @include flex-straight(row-reverse, space-between, flex-start);
+    }
+
+    .brand__icons {
+        align-self: flex-end;
+        margin: 0 0 .5rem .65rem;
+    }
+
+    .fontawesome--topnav {
+        font-size: 3rem;
+        color: var(--color-white);
+
+        & + .fontawesome--topnav {
+            margin-left: 1rem;
+        }
+    }
+
 }
 
 

@@ -15,7 +15,7 @@ const TopBar = () => {
          <BrandBox />
 
          <NavHamburger eventKey="0" />
-         <Accordion.Collapse eventKey="0">
+         <Accordion.Collapse eventKey="0" className="nav-collapse">
 
             <nav className="topbar__nav">
                <ul className="nav-list flow">
