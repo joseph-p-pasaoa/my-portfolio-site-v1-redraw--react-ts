@@ -29,9 +29,9 @@ export default function Main() {
                {/* PAGE ROUTING */}
                <Stage>
                   <Switch>
+                     <Route path={`/skills`} component={SkillsPage} />
                      <Route path={`/builds`} component={BuildsPage} />
                      {/* <Route path={`/contactme`} component={ContactMePage} /> */}
-                     <Route path={`/skills`} component={SkillsPage} />
                      {/* <Route path={`/blog`} component={BlogPage} /> */}
                      {/* <Route path={`/photography`} component={PhotographyPage} /> */}
                      {/* <Route path={`/siteinfo`} component={SiteInfoPage} /> */}

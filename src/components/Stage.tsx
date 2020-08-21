@@ -10,7 +10,7 @@ const Stage: React.FC<StageProps> = ({ children }) => {
    const toggleNavCollapse = useAccordionToggle("");
 
    return (
-      <div className="stage" onClick={toggleNavCollapse}>  {/* closes topbar accordion if open */}
+      <div className="stage page__container" onClick={toggleNavCollapse}>  {/* closes topbar accordion if open */}
          {children}
       </div>
    );
