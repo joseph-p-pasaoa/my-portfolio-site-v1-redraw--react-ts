@@ -2,8 +2,6 @@ import React from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
 import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 
-import BrandIcons from './BrandIcons';
-
 interface BrandStyleObj {
    home: string;
    notHome: string;
@@ -30,7 +28,6 @@ const BrandBox = () => {
                <h2>
                   Welcome!
                </h2>
-               <BrandIcons />
             </div>
 
             <div className={`brand--not-home ${brandStyle['notHome']}`}>
@@ -42,7 +39,6 @@ const BrandBox = () => {
                   software engineer /<br />
                   full-stack developer
                </h2>
-               <BrandIcons />
             </div>
 
          </Link>

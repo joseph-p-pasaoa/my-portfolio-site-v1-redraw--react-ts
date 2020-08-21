@@ -3,6 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 import BrandBox from './Bars/BrandBox';
 import NavHamburger from './Bars/NavHamburger';
+import BrandIcons from './Bars/BrandIcons';
 import NavListItems from './Bars/NavListItems';
 
 
@@ -22,6 +23,7 @@ const TopBar = () => {
                   <NavListItems />
 
                </ul>
+               <BrandIcons />
             </nav>
 
          </Accordion.Collapse>
