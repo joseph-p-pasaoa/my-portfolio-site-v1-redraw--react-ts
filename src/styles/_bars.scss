@@ -120,12 +120,14 @@
     .nav-link {
         &:link, &:visited {
             div {
+                // nav link text
                 position: relative;
                 width: fit-content;
                 text-align: right;
-                transition: color .1s ease-in, text-shadow .2s ease-in;
+                transition: color .1s ease-in 1s, text-shadow .2s ease-in;
 
                 &::before {
+                    // nav-link left-star icon
                     content: "✧";
                     display: inline-block;
                     position: relative;
@@ -136,7 +138,7 @@
                     color: var(--color-white);
                     opacity: 0;
 
-                    transition: opacity .5s ease-out;
+                    transition: opacity .5s ease-out 1s;
                 }
             }
         }
