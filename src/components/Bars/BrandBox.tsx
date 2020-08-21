@@ -15,8 +15,8 @@ const BrandBox = () => {
    const toggleNavCollapse = useAccordionToggle("");
 
    let brandStyle: BrandStyleObj = isAtHome
-      ?  { home: 'show', notHome: 'hide' }
-      :  { home: 'hide', notHome: 'show' };
+      ?  { home: 'showing', notHome: 'hiding' }
+      :  { home: 'hiding', notHome: 'showing' };
 
    return (
       <div className="brandbox">
