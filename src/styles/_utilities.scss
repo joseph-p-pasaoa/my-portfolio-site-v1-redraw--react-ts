@@ -40,6 +40,10 @@
     margin: .5rem 5% 2.11rem;
 }
 
+.article-copy {
+    line-height: 1.8;
+}
+
 .flow--col > * + * {
     margin-top: var(--flow-space, 1rem);
 }
