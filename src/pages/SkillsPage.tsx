@@ -94,9 +94,37 @@ const devData = [
 
 
 const SkillsPage = () => {
-  return (
-    <>SkillsPage</>
-  );
+   const printSkillBlock: PrintSkillBlock = (header, skillsData) => { // [<>Hello</>];
+      const listSkills = skillsData.map(skillObj => {
+         return(
+            <li data-skill={skillObj.name} key={skillObj.name}>
+               <img
+                  src={skillObj.src}
+                  className="icon-skill"
+                  alt={skillObj.name}
+               />
+            </li>
+         );
+      });
+
+      const output =
+         <ul className="section">
+            <li><h4 className="header-section">{header}</h4></li>
+            {listSkills}
+         </ul>;
+
+      return output;
+   };
+
+
+   return (
+      <section className='skills-page'>
+         <h4>SkillsPage</h4>
+
+         {printSkillBlock('Development', devData)}
+
+      </section>
+   );
 }
 
 
