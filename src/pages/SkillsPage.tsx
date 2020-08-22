@@ -62,24 +62,24 @@ const toolsData = [
       src: require('../assets/images/tech-icons/postman.svg')}
 ];
 
-// const designData = [
-//    { name: 'Figma',
-//       src: require('')},
-//    { name: 'Bootstrap',
-//       src: require('')},
-//    { name: 'Diagrams.net (Draw.io)',
-//       src: require('')},
-//    { name: 'Adobe XD',
-//       src: require('')},
-//    { name: 'Adobe Photoshop',
-//       src: require('')},
-//    { name: 'Adobe InDesign',
-//       src: require('')},
-//    { name: 'Adobe Premiere Pro',
-//       src: require('')},
-//    { name: 'Adobe Lightroom',
-//       src: require('')}
-// ];
+const designData = [
+   { name: 'Figma',
+      src: require('../assets/images/tech-icons/figma.png')},
+   { name: 'Bootstrap',
+      src: require('../assets/images/tech-icons/bootstrap.svg')},
+   { name: 'Diagrams.net (Draw.io)',
+      src: require('../assets/images/tech-icons/drawio.png')},
+   { name: 'Adobe XD',
+      src: require('../assets/images/tech-icons/exp design.svg')},
+   { name: 'Adobe Photoshop',
+      src: require('../assets/images/tech-icons/photoshop.svg')},
+   { name: 'Adobe InDesign',
+      src: require('../assets/images/tech-icons/indesign.svg')},
+   { name: 'Adobe Premiere Pro',
+      src: require('../assets/images/tech-icons/premiere pro.svg')},
+   { name: 'Adobe Lightroom',
+      src: require('../assets/images/tech-icons/lightroom.svg')}
+];
 
 // const productivityData = [
 //    { name: 'Trello',
