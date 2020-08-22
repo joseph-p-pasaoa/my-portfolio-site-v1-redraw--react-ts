@@ -30,18 +30,18 @@ const devData = [
       src: require('../assets/images/tech-icons/gatsbyjs.svg')}
 ];
 
-// const libsData = [
-//    { name: 'ReactJS',
-//       src: require('')},
-//    { name: 'React Redux',
-//       src: require('')},
-//    { name: 'React Router',
-//       src: require('')},
-//    { name: 'ExpressJS',
-//       src: require('')},
-//    { name: 'NodeJS',
-//       src: require('')}
-// ];
+const libsData = [
+   { name: 'ReactJS',
+      src: require('../assets/images/tech-icons/react.svg')},
+   { name: 'React Redux',
+      src: require('../assets/images/tech-icons/redux.svg')},
+   { name: 'React Router',
+      src: require('../assets/images/tech-icons/react router.png')},
+   { name: 'ExpressJS',
+      src: require('../assets/images/tech-icons/express-original.svg')},
+   { name: 'NodeJS',
+      src: require('../assets/images/tech-icons/nodejs color.svg')}
+];
 
 // const toolsData = [
 //    { name: 'Git',
@@ -122,6 +122,8 @@ const SkillsPage = () => {
          <h4>SkillsPage</h4>
 
          {printSkillBlock('Development', devData)}
+
+         {printSkillBlock('Frameworks, Libraries, Runtimes', libsData)}
 
       </section>
    );
