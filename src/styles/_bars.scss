@@ -27,7 +27,7 @@
             font-size: 2.3rem;
             text-transform: uppercase;
             line-height: 1;
-            text-shadow: var(--t-shadow);
+            text-shadow: var(--t-shadow-sm);
         }
         h2 {
             font-family: var(--ff-black);
@@ -46,7 +46,7 @@
             text-transform: uppercase;
             line-height: 1;
             white-space: nowrap;
-            text-shadow: var(--t-shadow);
+            text-shadow: var(--t-shadow-sm);
         }
         h2 {
             font-family: var(--ff-black);
@@ -196,7 +196,7 @@
 
     .fontawesome-icon--topnav {
         font-size: 3rem;
-        filter: drop-shadow(var(--t-shadow));
+        filter: drop-shadow(var(--t-shadow-sm));
     }
 
 }

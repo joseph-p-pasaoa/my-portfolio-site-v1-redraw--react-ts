@@ -100,7 +100,7 @@ const SkillsPage = () => {
             <li data-skill={skillObj.name} key={skillObj.name}>
                <img
                   src={skillObj.src}
-                  className="icon-skill"
+                  className="skill-icon"
                   alt={skillObj.name}
                />
             </li>
@@ -119,7 +119,7 @@ const SkillsPage = () => {
 
    return (
       <section className='skills-page'>
-         <h4>SkillsPage</h4>
+         <h4 className='page__title'>Skills</h4>
 
          {printSkillBlock('Development', devData)}
          {/* {printSkillBlock('Frameworks, Libraries, Runtimes', libsData)} */}
