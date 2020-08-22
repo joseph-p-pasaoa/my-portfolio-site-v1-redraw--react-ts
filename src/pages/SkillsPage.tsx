@@ -36,11 +36,11 @@ const libsData = [
    { name: 'React Redux',
       src: require('../assets/images/tech-icons/redux.svg')},
    { name: 'React Router',
-      src: require('../assets/images/tech-icons/react router.png')},
+      src: require('../assets/images/tech-icons/react-router.png')},
    { name: 'ExpressJS',
       src: require('../assets/images/tech-icons/express-original.svg')},
    { name: 'NodeJS',
-      src: require('../assets/images/tech-icons/nodejs color.svg')}
+      src: require('../assets/images/tech-icons/nodejs-color.svg')}
 ];
 
 const toolsData = [
@@ -51,9 +51,9 @@ const toolsData = [
    { name: 'Jest',
       src: require('../assets/images/tech-icons/jestjs.svg')},
    { name: 'Chrome DevTools',
-      src: require('../assets/images/tech-icons/chrome devtools.png')},
+      src: require('../assets/images/tech-icons/chrome-devtools.png')},
    { name: 'Firefox Developer',
-      src: require('../assets/images/tech-icons/firefox developer.png')},
+      src: require('../assets/images/tech-icons/firefox-developer.png')},
    { name: 'VS Code',
       src: require('../assets/images/tech-icons/vscode.svg')},
    { name: 'Npm',
@@ -70,13 +70,13 @@ const designData = [
    { name: 'Diagrams.net (Draw.io)',
       src: require('../assets/images/tech-icons/drawio.png')},
    { name: 'Adobe XD',
-      src: require('../assets/images/tech-icons/exp design.svg')},
+      src: require('../assets/images/tech-icons/exp-design.svg')},
    { name: 'Adobe Photoshop',
       src: require('../assets/images/tech-icons/photoshop.svg')},
    { name: 'Adobe InDesign',
       src: require('../assets/images/tech-icons/indesign.svg')},
    { name: 'Adobe Premiere Pro',
-      src: require('../assets/images/tech-icons/premiere pro.svg')},
+      src: require('../assets/images/tech-icons/premiere-pro.svg')},
    { name: 'Adobe Lightroom',
       src: require('../assets/images/tech-icons/lightroom.svg')}
 ];
