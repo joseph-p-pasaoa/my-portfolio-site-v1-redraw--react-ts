@@ -43,24 +43,24 @@ const libsData = [
       src: require('../assets/images/tech-icons/nodejs color.svg')}
 ];
 
-// const toolsData = [
-//    { name: 'Git',
-//       src: require('')},
-//    { name: 'Github',
-//       src: require('')},
-//    { name: 'Jest',
-//       src: require('')},
-//    { name: 'Chrome DevTools',
-//       src: require('')},
-//    { name: 'Firefox Developer',
-//       src: require('')},
-//    { name: 'VS Code',
-//       src: require('')},
-//    { name: 'Npm',
-//       src: require('')},
-//    { name: 'Postman',
-//       src: require('')}
-// ];
+const toolsData = [
+   { name: 'Git',
+      src: require('../assets/images/tech-icons/git.png')},
+   { name: 'Github',
+      src: require('../assets/images/tech-icons/github.svg')},
+   { name: 'Jest',
+      src: require('../assets/images/tech-icons/jestjs.svg')},
+   { name: 'Chrome DevTools',
+      src: require('../assets/images/tech-icons/chrome devtools.png')},
+   { name: 'Firefox Developer',
+      src: require('../assets/images/tech-icons/firefox developer.png')},
+   { name: 'VS Code',
+      src: require('../assets/images/tech-icons/vscode.svg')},
+   { name: 'Npm',
+      src: require('../assets/images/tech-icons/npm.svg')},
+   { name: 'Postman',
+      src: require('../assets/images/tech-icons/postman.svg')}
+];
 
 // const designData = [
 //    { name: 'Figma',
