@@ -81,12 +81,12 @@ const designData = [
       src: require('../assets/images/tech-icons/lightroom.svg')}
 ];
 
-// const productivityData = [
-//    { name: 'Trello',
-//       src: require('')},
-//    { name: 'Basecamp',
-//       src: require('')}
-// ];
+const productivityData = [
+   { name: 'Trello',
+      src: require('../assets/images/tech-icons/trello.svg')},
+   { name: 'Basecamp',
+      src: require('../assets/images/tech-icons/basecamp.png')}
+];
 
 // TEMPLATE
 // { name: '',
@@ -121,7 +121,7 @@ const SkillsPage = () => {
       <section className='skills-page'>
          <h4>SkillsPage</h4>
 
-         {/* {printSkillBlock('Development', devData)} */}
+         {printSkillBlock('Development', devData)}
          {/* {printSkillBlock('Frameworks, Libraries, Runtimes', libsData)} */}
          {/* {printSkillBlock('Tools', toolsData)} */}
          {/* {printSkillBlock('Design, Create', designData)} */}
