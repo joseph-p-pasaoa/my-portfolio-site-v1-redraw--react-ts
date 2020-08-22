@@ -9,7 +9,7 @@ import NavListItems from './Bars/NavListItems';
 
 const TopBar = () => {
    return(
-      <section className='topbar'>
+      <header className='topbar'>
          <figure className="topbar__background"></figure>
 
          <BrandBox />
@@ -27,7 +27,7 @@ const TopBar = () => {
             </nav>
 
          </Accordion.Collapse>
-      </section>
+      </header>
    );
 }
 

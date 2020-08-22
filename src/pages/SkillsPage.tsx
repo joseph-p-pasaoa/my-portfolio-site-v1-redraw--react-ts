@@ -118,7 +118,7 @@ const SkillsPage = () => {
 
 
    return (
-      <section className='skills-page'>
+      <main className='skills-page'>
          <h4 className='page__title'>Skills</h4>
 
          {printSkillBlock('Development', devData)}
@@ -127,7 +127,7 @@ const SkillsPage = () => {
          {/* {printSkillBlock('Design, Create', designData)} */}
          {/* {printSkillBlock('Productivity', productivityData)} */}
 
-      </section>
+      </main>
    );
 }
 

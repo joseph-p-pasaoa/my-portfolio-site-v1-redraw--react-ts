@@ -3,7 +3,7 @@ import React from 'react';
 
 const HomePage = () => {
    return(
-      <section className='home-page'>
+      <main className='home-page'>
          <div className='first-line'>
             <div className='greeting'>Hi!</div>
             <div className='pre-name'>I'm</div>
@@ -26,7 +26,7 @@ const HomePage = () => {
 
             <p className='article-copy'>Thank you for visiting. Please, have a fun look around!</p>
          </article>
-      </section>
+      </main>
    );
 }
 
