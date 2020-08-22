@@ -121,9 +121,11 @@ const SkillsPage = () => {
       <section className='skills-page'>
          <h4>SkillsPage</h4>
 
-         {printSkillBlock('Development', devData)}
-
-         {printSkillBlock('Frameworks, Libraries, Runtimes', libsData)}
+         {/* {printSkillBlock('Development', devData)} */}
+         {/* {printSkillBlock('Frameworks, Libraries, Runtimes', libsData)} */}
+         {/* {printSkillBlock('Tools', toolsData)} */}
+         {/* {printSkillBlock('Design, Create', designData)} */}
+         {/* {printSkillBlock('Productivity', productivityData)} */}
 
       </section>
    );
