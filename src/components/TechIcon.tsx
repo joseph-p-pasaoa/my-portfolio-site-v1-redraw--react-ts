@@ -1,6 +1,6 @@
 import React from 'react'
 
-import devIcons from '../data/techIconsData';
+import techIcons from '../data/techIconsData';
 
 interface TechIconProps {
    name: string;
@@ -10,7 +10,11 @@ interface TechIconProps {
 
 const TechIcon: React.FC<TechIconProps> = ({ name, className }) => {
    return (
-      <img src={devIcons[name]} alt={name} className={className} />
+      <img
+         src={techIcons[name]}
+         alt={name}
+         className={className}
+      />
    );
 }
 
