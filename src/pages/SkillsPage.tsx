@@ -1,7 +1,7 @@
 import React from 'react'
 
 type PrintSkillBlock = (
-   header: string,
+   title: string,
    skillsData: {
       name: string;
       src: string;
@@ -94,7 +94,9 @@ const productivityData = [
 
 
 const SkillsPage = () => {
-   const printSkillBlock: PrintSkillBlock = (header, skillsData) => { // [<>Hello</>];
+
+   // helper: creates grouping jsx.element from passed-in data variable
+   const printSkillBlock: PrintSkillBlock = (title, skillsData) => { // [<>Hello</>];
       const listSkills = skillsData.map(skillObj => {
          return(
             <li data-skill={skillObj.name} key={skillObj.name}>
@@ -108,8 +110,11 @@ const SkillsPage = () => {
       });
 
       const output =
-         <ul className="section">
-            <li><h4 className="header-section">{header}</h4></li>
+         <ul className="grouping">
+            <li className="grouping__title"> {/* Placed inside as li for abs positioning w/grouping */}
+               <h4>{title}</h4>
+            </li>
+
             {listSkills}
          </ul>;
 
