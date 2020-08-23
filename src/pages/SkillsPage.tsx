@@ -127,10 +127,10 @@ const SkillsPage = () => {
          <h4 className='page__title'>Skills</h4>
 
          {printSkillBlock('Development', devData)}
-         {/* {printSkillBlock('Frameworks, Libraries, Runtimes', libsData)} */}
-         {/* {printSkillBlock('Tools', toolsData)} */}
-         {/* {printSkillBlock('Design, Create', designData)} */}
-         {/* {printSkillBlock('Productivity', productivityData)} */}
+         {printSkillBlock('Frameworks, Libraries, Runtimes', libsData)}
+         {printSkillBlock('Tools', toolsData)}
+         {printSkillBlock('Design, Create', designData)}
+         {printSkillBlock('Productivity', productivityData)}
 
       </main>
    );
