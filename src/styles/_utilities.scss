@@ -75,5 +75,5 @@
     white-space: nowrap;
 }
 
-.showing { opacity: 1; }
-.hiding { opacity: 0; }
+.showing { opacity: 1 !important; }
+.hiding { opacity: 0 !important; }

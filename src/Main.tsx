@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { useLocation, Switch, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEdit, faFileAlt } from '@fortawesome/free-regular-svg-icons';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -17,9 +17,14 @@ library.add(faEdit, faFileAlt, faGithubSquare, faLinkedin);
 
 
 export default function Main() {
+   const { pathname } = useLocation();
+
+
    return (
       <div className="Main">
-         <figure className="background-dimmer"></figure>
+         <figure
+            className={`background-dimmer ${pathname !== '/' ? 'showing' : ''}`}>
+         </figure>
 
          <LayoutBase>
             <>
