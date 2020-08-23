@@ -10,6 +10,7 @@ type PrintSkillBlock = (
 
 const devSkills = [
    'Javascript (ES5+)',
+   'Typescript',
    'HTML5',
    'CSS3',
    'SCSS',
