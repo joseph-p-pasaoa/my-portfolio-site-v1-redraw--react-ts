@@ -2,11 +2,11 @@ import React from 'react'
 
 
 const ProjectsPage = () => {
-  return (
-    <main>
-      ProjectsPage
-    </main>
-  );
+   return (
+      <main>
+         ProjectsPage
+      </main>
+   );
 }
 
 
