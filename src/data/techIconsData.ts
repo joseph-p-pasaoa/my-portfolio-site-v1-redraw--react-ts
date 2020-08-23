@@ -7,6 +7,7 @@ export const techIcons: iconData = {
    // DEVELOPMENT
    'Javascript (ES5+)': require('../assets/images/tech-icons/js.svg'),
    'Typescript': require('../assets/images/tech-icons/typescript.svg'),
+   'Python': require('../assets/images/tech-icons/python.svg'),
    'HTML5': require('../assets/images/tech-icons/html5.png'),
    'CSS3': require('../assets/images/tech-icons/css3.png'),
    'SCSS': require('../assets/images/tech-icons/scss.png'),
