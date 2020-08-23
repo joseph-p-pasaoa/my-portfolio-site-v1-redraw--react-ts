@@ -4,6 +4,17 @@
         height: $icon-container-size;
         max-width: $icon-container-size;
         filter: drop-shadow(2px 2px 3px #000);
+
+
+        // targeted custom styles
+        &[alt=ReactJS] {
+            object-fit: cover;
+        }
+        &[alt=ExpressJS] {
+            border-radius: .7rem;
+            padding: .2rem;
+            background-color: #e5e5e5;
+        }
     }
 
     .grouping {
