@@ -8,9 +8,10 @@
 
     .grouping {
         position: relative;
-        @include flex-straight(row, space-between);
+        @include flex-straight(row, center);
         flex-wrap: wrap;
 
+        max-width: 700px;
         padding: 1.5rem 1rem 0;
             @media (max-width: 419px) { padding: 1.5rem 0 0; }
         border: solid 15px #222d4a94;
