@@ -123,8 +123,8 @@ const SkillsPage = () => {
 
 
    return (
-      <main className='skills-page'>
-         <h4 className='page__title'>Skills</h4>
+      <main className='skills-page flow--col'>
+         <h4 className='page__title no-flow'>Skills</h4>
 
          {printSkillBlock('Development', devData)}
          {printSkillBlock('Frameworks, Libraries, Runtimes', libsData)}

@@ -56,10 +56,10 @@
     line-height: 1.8;
 }
 
-.flow--col > * + * {
+.flow--col > *:not(.no-flow) + * {
     margin-top: var(--flow-space, 1rem);
 }
-.flow--row > * + * {
+.flow--row > *:not(.no-flow) + * {
     margin-left: var(--flow-space, 1rem);
 }
 
