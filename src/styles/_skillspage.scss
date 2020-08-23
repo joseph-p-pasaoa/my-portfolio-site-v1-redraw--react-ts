@@ -7,7 +7,7 @@
         max-width: 700px;
         padding: 1.5rem 1rem 0;
             @media (max-width: 419px) { padding: 1.5rem 0 0; }
-        border: solid 15px #222d4a94;
+        border: solid 15px #1a357b94;
         border-radius: 3rem;
 
 
@@ -21,7 +21,7 @@
                 font-weight: bold;
                 text-transform: lowercase;
                 white-space: nowrap;
-                color: var(--color-blue);
+                color: var(--color-white);
                 text-shadow: var(--t-shadow-md);
             }
         }

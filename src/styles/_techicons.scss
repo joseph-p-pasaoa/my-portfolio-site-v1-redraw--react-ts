@@ -1,7 +1,7 @@
 .tech-icon {
-    $icon-container-size: 3.4rem !default;
-    height: $icon-container-size;
-    max-width: $icon-container-size;
+    --icon-size: 3.4rem;
+    height: var(--icon-size);
+    max-width: var(--icon-size);
     filter: drop-shadow(2px 2px 3px #000);
 
 
