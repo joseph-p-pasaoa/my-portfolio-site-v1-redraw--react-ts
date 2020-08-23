@@ -1,7 +1,58 @@
 .skills-page {
     .skill-icon {
-        height: 5.4rem;
-        max-width: 5.4rem;
+        $icon-container-size: 3.4rem;
+        height: $icon-container-size;
+        max-width: $icon-container-size;
         filter: drop-shadow(2px 2px 3px #000);
+    }
+
+    .grouping {
+        position: relative;
+        @include flex-straight(row);
+        flex-wrap: wrap;
+
+        padding: 1.5rem 1rem 0;
+        border: solid 15px #222d4a94;
+        border-radius: 4rem;
+
+
+        &__title {
+            position: absolute;
+            top: -1rem;
+            left: -.1875rem;
+
+            & > h4 {
+                font-size: 1rem;
+                font-weight: bold;
+                text-transform: lowercase;
+                white-space: nowrap;
+                color: var(--color-blue);
+                text-shadow: var(--t-shadow-md);
+            }
+        }
+
+        // targets 'skill-icon's
+        & > li:not(.grouping__title) {
+            position: relative;
+            flex-basis: 50%;
+            margin-bottom: 3rem;
+
+            @include flex-straight(column, flex-start, center);
+
+
+            &::after {
+                content: attr(data-skill);
+
+                position: absolute;
+                top: 3.4rem;
+                left: 50%;
+                width: 100%;
+                padding: 0 .4rem;
+                transform: translateX(-50%);
+
+                text-align: center;
+                font-size: .9rem;
+            }
+        }
     }
 }
