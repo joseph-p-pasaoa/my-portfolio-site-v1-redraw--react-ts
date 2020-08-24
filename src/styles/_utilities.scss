@@ -63,6 +63,15 @@
     margin-left: var(--flow-space, 1rem);
 }
 
+footer button.top-return {
+    width: 100%;
+    padding-bottom: .5rem;
+    border-top-color: #bbb;
+    border-bottom: none;
+    border-radius: 0;
+    background-color: var(--color-blue);
+}
+
 .visually-hidden {
     border: 0;
     clip: rect(0 0 0 0);
