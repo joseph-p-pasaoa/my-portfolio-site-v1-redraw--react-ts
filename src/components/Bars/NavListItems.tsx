@@ -24,6 +24,11 @@ const NavListItems = () => {
                <div>Builds</div>
             </NavLink>
          </li>
+         <li className="nav-item">
+            <NavLink to={`/aboutme`} className="nav-link" onClick={toggleNavCollapse}>
+               <div>About Me</div>
+            </NavLink>
+         </li>
          {/* <li className="nav-item">
             <NavLink to={`/blog`} className="nav-link">
                <div>Blog</div>

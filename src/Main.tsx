@@ -11,6 +11,8 @@ import Stage from './components/Stage';
 import HomePage from './pages/HomePage';
 import BuildsPage from './pages/BuildsPage';
 import SkillsPage from './pages/SkillsPage';
+import AboutMePage from './pages/AboutMePage';
+import PageEnd from './components/PageEnd';
 
 // activate and populate FontAwesome sitewide icon library
 library.add(faEdit, faFileAlt, faGithubSquare, faLinkedin);
@@ -40,9 +42,11 @@ export default function Main() {
                      {/* <Route path={`/blog`} component={BlogPage} /> */}
                      {/* <Route path={`/photography`} component={PhotographyPage} /> */}
                      {/* <Route path={`/siteinfo`} component={SiteInfoPage} /> */}
+                     <Route path={`/aboutme`} component={AboutMePage} />
                      <Route path={`/`} component={HomePage} />
                   </Switch>
                </Stage>
+               <PageEnd />
             </>
          </LayoutBase>
       </div>
