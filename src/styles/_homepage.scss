@@ -13,7 +13,6 @@
     }
 
     .pre-name {
-        margin-top: .35rem;
         margin-left: 1.25rem;
 
         font-size: 1.7rem;
@@ -25,7 +24,10 @@
     }
 
     h3 {
-        margin: 0 0 1.5rem 0.7rem;
+        position: relative;
+        top: -.35rem;
+
+        margin: 0 0 1.1rem .7rem;
 
         font-family: var(--ff-black);
         font-size: 2.11rem;
@@ -35,7 +37,8 @@
         text-shadow: 2px 2px 15px #000;
 
         .dim {
-            filter: brightness(.3) saturate(0.7);
+            white-space: nowrap;
+            filter: brightness(.4) saturate(0.7);
         }
     }
 }
