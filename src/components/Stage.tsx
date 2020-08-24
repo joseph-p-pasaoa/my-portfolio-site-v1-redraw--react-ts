@@ -11,6 +11,7 @@ const Stage: React.FC<StageProps> = ({ children }) => {
 
    return (
       <div className="stage page__container" onClick={toggleNavCollapse}>  {/* closes topbar accordion if open */}
+         <p id='pageTopAnchor'></p>
          {children}
       </div>
    );
