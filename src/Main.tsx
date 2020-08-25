@@ -20,18 +20,19 @@ library.add(faEdit, faFileAlt, faGithubSquare, faLinkedin);
 
 export default function Main() {
    const { pathname } = useLocation();
+   const isAtHome = pathname === '/';
 
 
    return (
       <div className="Main">
          <figure
-            className={`background-dimmer ${pathname !== '/' ? 'showing' : ''}`}>
+            className={`background-dimmer ${isAtHome ? '': 'showing'}`}>
          </figure>
 
          <LayoutBase>
             <>
                {/* ASIDE BARS (only one is "display: block" at any time) */}
-               <TopBar />
+               <TopBar isAtHome={isAtHome} />
 
                {/* PAGE ROUTING */}
                <Stage>
