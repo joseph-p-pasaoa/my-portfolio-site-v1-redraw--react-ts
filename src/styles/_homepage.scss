@@ -13,7 +13,7 @@
     }
 
     .pre-name {
-        margin-left: 1.25rem;
+        margin-left: 1rem;
 
         font-size: 1.7rem;
         font-weight: bold;
@@ -23,17 +23,18 @@
         text-shadow: 14px 4px 8px #000;
     }
 
-    h3 {
+    h3 /* name */ {
         position: relative;
         top: -.3rem;
 
-        margin: 0 0 1.1rem .7rem;
+        width: max-content;
+        margin: .4rem auto .9rem;
 
         font-family: var(--ff-black);
-        font-size: 2.11rem;
+        font-size: 10vw;
         font-weight: 900;
         line-height: 1;
-        color: var(--color-primary);
+        color: var(--color-white);
         text-shadow: 2px 2px 15px #000;
 
         .dim {

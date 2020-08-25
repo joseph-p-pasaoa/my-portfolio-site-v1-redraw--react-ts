@@ -15,8 +15,8 @@ const HomePage = () => {
 
          <article>
             <p>I'm a full-stack developer specialized in the PERN stack (PostgreSQL, Express, React.js, Node.js) and based in New York City.</p>
-            <p>I like to build. I like to learn new things and make mistakes in the <a href='https://www.pursuit.org/' target='_blank' rel='noopener noreferrer' className='inline-link'>Pursuit</a> of being better.</p>
-            <p>Skilled with Typescript, Python, React Redux, SCSS/CSS, Jest, and HTML5. Adobe Creative Suite and Figma.</p>
+            <p>I like to build. I like to learn new things and challenge myself in the <a href='https://www.pursuit.org/' target='_blank' rel='noopener noreferrer' className='inline-link'>Pursuit</a> of being better.</p>
+            <p>Also experienced in Typescript, Python, React Redux, SCSS/CSS, Jest, and HTML5. Adobe Creative Suite and Figma.</p>
             <p>Please, have a fun look around. Thank you for visiting!</p>
          </article>
       </main>
