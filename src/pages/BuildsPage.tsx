@@ -1,19 +1,19 @@
 import React from 'react'
 
-import projects from '../data/projects';
+import builds from '../data/builds';
 
 
-const ProjectsPage = () => {
+const BuildsPage = () => {
 
 
 
    return (
       <main>
          <h4 className='page__title no-flow'>Builds</h4>
-         ProjectsPage
+         BuildsPage
       </main>
    );
 }
 
 
-export default ProjectsPage;
+export default BuildsPage;
