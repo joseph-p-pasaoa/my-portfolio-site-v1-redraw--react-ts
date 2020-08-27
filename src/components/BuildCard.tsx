@@ -10,7 +10,7 @@ interface BuildObject {
    techs?: Array<string>;
    obstacles?: string;
    wins?: string;
-   features?: string;
+   features?: Array<string>;
    responsibilities?: string;
 }
 

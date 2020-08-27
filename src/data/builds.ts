@@ -2,7 +2,7 @@ export const projects = {
    endeavor: {
       name: "Endeavor",
       description: `Endeavor is a software platform empowering organizations to manage their volunteer workforce amid events seamlessly.`,
-      screencapUrl: "proj-endeavor-admin-dash.jpg",
+      imgUrls: ["proj-endeavor-admin-dash.jpg"],
       urlLive: "https://endeavor-app.herokuapp.com/",
       urlRepo: "https://github.com/joseph-p-pasaoa/Endeavor",
       techs: [
@@ -32,7 +32,7 @@ export const projects = {
          "HTML5"
       ],
       role: "team build",
-      difficulties: `From beginning to end, the three of us struggled to get a sense of how to be productive developers in the new COVID-19 lockdown era. We had to wrestle between adding more features and focusing on core functionality, wanting to learn new techs and avoiding adding too much complexity onto our plates. We had to figure out how to deal with not only our ambitiousness but secondly work/life balances stressed from being locked-down at home for months.`,
+      obstacles: `From beginning to end, the three of us struggled to get a sense of how to be productive developers in the new COVID-19 lockdown era. We had to wrestle between adding more features and focusing on core functionality, wanting to learn new techs and avoiding adding too much complexity onto our plates. We had to figure out how to deal with not only our ambitiousness but secondly work/life balances stressed from being locked-down at home for months.`,
       wins: `We dedicated months to a great team effort, in addition to creating this project entirely remotely. We succeeded in implementing SendGrid, AWS, ChartJS, and MomentJS into our Minimal Viable Product. We developed a robust RESTful API with elaborate PSQL database protected behind user auth checks and input validations on all non-GET API requests. To top it off, we learned so much about software development under our mentors Dion Ridley, an Engineering Leader at Netflix, and Ben Sussman, an Engineer at Spell, including discussions on GraphQL, Apollo, Redis, among other techs.`,
       features: [
          "four distinct user roles: staff, admin (elevated staff), volunteer, student",
