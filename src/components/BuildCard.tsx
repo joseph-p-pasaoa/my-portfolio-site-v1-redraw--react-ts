@@ -4,7 +4,7 @@ interface BuildObject {
    name: string;
    role?: string;
    description?: string;
-   imgUrls?: Array<string>;
+   imgs?: Array<string>;
    urlLive?: string;
    urlRepo?: string;
    techs?: Array<string>;
