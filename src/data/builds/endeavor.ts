@@ -4,17 +4,17 @@ const endeavor = {
    description: `Endeavor is a software platform empowering organizations to manage their volunteer workforce amid events seamlessly.`,
    imgs: [
       { caption: "Admin's Dashboard",
-         src: '/1-admin-dash.png' },
+         filename: '1-admin-dash.png' },
       { caption: 'Landing Login',
-         src: '/2-landing.png' },
+         filename: '2-landing.png' },
       { caption: 'Database Schema',
-         src: '/3-schema.png' },
+         filename: '3-schema.png' },
       { caption: 'Volunteer Signup',
-         src: '/4-vol-signup.png' },
+         filename: '4-vol-signup.png' },
       { caption: 'Volunteer\'s Dashboard',
-         src: '/5-vol-dash-iphone.png' },
+         filename: '5-vol-dash-iphone.png' },
       { caption: 'Admin\'s New Volunteers Module',
-         src: '/6-newvols-anim.gif' }
+         filename: '6-newvols-anim.gif' }
    ],
    urlLive: "https://endeavor-app.herokuapp.com/",
    urlRepo: "https://github.com/joseph-p-pasaoa/Endeavor",
