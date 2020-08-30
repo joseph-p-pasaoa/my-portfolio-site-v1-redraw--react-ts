@@ -1,19 +1,20 @@
 const endeavor = {
    name: "Endeavor",
+   buildName: 'endeavor',
    description: `Endeavor is a software platform empowering organizations to manage their volunteer workforce amid events seamlessly.`,
    imgs: [
       { caption: "Admin's Dashboard",
-         src: require('../../assets/images/build-imgs/endeavor/1-admin-dash.png') },
+         src: '/1-admin-dash.png' },
       { caption: 'Landing Login',
-         src: require('../../assets/images/build-imgs/endeavor/2-landing.png') },
+         src: '/2-landing.png' },
       { caption: 'Database Schema',
-         src: require('../../assets/images/build-imgs/endeavor/3-schema.png') },
+         src: '/3-schema.png' },
       { caption: 'Volunteer Signup',
-         src: require('../../assets/images/build-imgs/endeavor/4-vol-signup.png') },
+         src: '/4-vol-signup.png' },
       { caption: 'Volunteer\'s Dashboard',
-         src: require('../../assets/images/build-imgs/endeavor/5-vol-dash-iphone.png') },
+         src: '/5-vol-dash-iphone.png' },
       { caption: 'Admin\'s New Volunteers Module',
-         src: require('../../assets/images/build-imgs/endeavor/6-newvols-anim.gif') }
+         src: '/6-newvols-anim.gif' }
    ],
    urlLive: "https://endeavor-app.herokuapp.com/",
    urlRepo: "https://github.com/joseph-p-pasaoa/Endeavor",
