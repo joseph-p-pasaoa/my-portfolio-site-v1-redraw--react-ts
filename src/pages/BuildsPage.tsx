@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-// import Modal from 'react-bootstrap/Modal';
+import Modal from 'react-bootstrap/Modal';
 
 import builds from '../data/buildsIndex';
-// import builds from '../data/builds';
 // import BuildCard from '../components/BuildCard';
 
 
@@ -21,7 +20,7 @@ const BuildsPage = () => {
             onClick={() => setShowLightbox(true)}
          />
 
-         {/* <Modal
+         <Modal
             show={showLightbox}
             onHide={() => setShowLightbox(false)}
             dialogClassName="lightbox-base"
@@ -37,7 +36,7 @@ const BuildsPage = () => {
                   alt='Admin Dashboard'
                />
             </Modal.Body>
-         </Modal> */}
+         </Modal>
       </main>
    );
 }

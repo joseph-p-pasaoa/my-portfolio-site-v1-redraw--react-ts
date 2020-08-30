@@ -14,7 +14,7 @@ const buildImgs = (buildObj: any) => {   // DEV
 
       return ({
          caption: imgObj.caption,
-         filename: finalSrc
+         src: finalSrc
       })
    });
 
