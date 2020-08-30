@@ -1,0 +1,12 @@
+.modal[aria-labelledby="build-lightbox"] {
+    display: flex !important;
+}
+
+.lightbox-base {
+    align-self: center;
+
+    @media (min-width: 576px) {
+        max-width: none;
+        margin: 1% 5%;
+    }
+}
