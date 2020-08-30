@@ -1,16 +1,16 @@
 /* IMPORTS */
-@import '~bootstrap/scss/bootstrap';                // necessary for react-bootstrap styling
-@import './styles/hamburger/hamburger-settings';    // customizes hamburger styling
-@import './styles/hamburger/hamburgers';            // styling for hamburger animations (https://jonsuh.com/hamburgers/)
+@import '~bootstrap/scss/bootstrap';                        // necessary for react-bootstrap styling
+@import './styles/import-hamburger/hamburger-settings';     // customizes hamburger styling
+@import './styles/import-hamburger/hamburgers';             // styling for hamburger animations (https://jonsuh.com/hamburgers/)
+@import './styles/import-hamburger/hamburger-animation';    // customizes hamburger animation
 
-@import './styles/reset';                           // modern reset by Andy Bell
-@import './styles/techicons';                       // style for tech icons
-@import './styles/utilities';                       // for useful styling helpers, mixins, functions
-@import './styles/backgrounds';                     // all layout-related backgrounds
-@import './styles/bars';                            // for styling topbar and sidebar
-@import './styles/hamburger/hamburger-animation';   // customizes hamburger animation
+@import './styles/reset';                                   // modern reset by Andy Bell
+@import './styles/techicons';                               // style for tech icons
+@import './styles/utilities';                               // for useful styling helpers, mixins, functions
+@import './styles/backgrounds';                             // all layout-related backgrounds
+@import './styles/bars';                                    // for styling topbar and sidebar
 
-@import './styles/homepage';                        // HERE AND BELOW ARE PAGE STYLINGS
+@import './styles/homepage';                                // HERE AND BELOW ARE PAGE STYLINGS
 @import './styles/skillspage';
 
 
