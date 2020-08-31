@@ -1,10 +1,14 @@
 .modal[aria-labelledby="build-lightbox"] {
     display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body img {
+    max-height: 80vh;   // tweak as necessary
 }
 
 .lightbox-base {
-    align-self: center;
-
     @media (min-width: 576px) {
         max-width: none;
         margin: 1% 5%;
