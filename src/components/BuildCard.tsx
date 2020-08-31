@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 
 interface BuildObject {
    name: string;
@@ -24,20 +25,40 @@ interface BuildCardProps {
 const BuildCard: React.FC<BuildCardProps> = (props) => {
    const { build, setShowLightbox, setModalImage } = props;
 
-   const handleThumbClick = () => {
-      setModalImage(build.imgs[0]);
-      setShowLightbox(true);
+   const handleCarouselClick = (e: any) => {
+      if (e.target.dataset.src) {
+         setModalImage({
+            src: e.target.dataset.src,
+            caption: e.target.alt
+         });
+         setShowLightbox(true);
+      }
    }
 
    return(
       <article className='build-card'>
          <h4>{build.name}</h4>
 
-         <img
-            src={build.imgs[0].src}
-            alt={build.imgs[0].caption}
-            onClick={handleThumbClick}
-         />
+         <Carousel onClick={handleCarouselClick}>
+            {build.imgs.map((imgObj: any) => {
+               return(
+                  <Carousel.Item>
+                     <img
+                        // className="d-block w-100"
+                        src={imgObj.thumb}
+                        alt={imgObj.caption}
+                        data-src={imgObj.src}
+                        key={imgObj.thumb}
+                     />
+                     <Carousel.Caption>
+                        {/* <h3>First slide label</h3> */}
+                        <p>{imgObj.caption}</p>
+                     </Carousel.Caption>
+                  </Carousel.Item>
+               );
+            })}
+         </Carousel>
+
       </article>
    );
 }

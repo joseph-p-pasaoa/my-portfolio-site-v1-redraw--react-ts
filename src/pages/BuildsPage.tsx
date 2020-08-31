@@ -7,7 +7,7 @@ import BuildCard from '../components/BuildCard';
 
 const BuildsPage = () => {
    const [showLightbox, setShowLightbox] = useState(false);
-   const [modalImage, setModalImage] = useState(builds[0].imgs[0]);
+   const [modalImage, setModalImage] = useState({caption: '', src: ''});
 
 
    return (

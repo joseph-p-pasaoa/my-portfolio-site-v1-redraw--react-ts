@@ -11,10 +11,16 @@ const buildImgs = (buildObj: any) => {   // DEV
          buildName,
          imgObj.filename
       );
+      const thumbSrc = path.join(
+         buildImagesPath,
+         buildName,
+         't' + imgObj.filename
+      );
 
       return ({
          caption: imgObj.caption,
-         src: finalSrc
+         src: finalSrc,
+         thumb: thumbSrc
       })
    });
 
