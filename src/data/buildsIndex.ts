@@ -20,7 +20,7 @@ const buildImgs = (buildObj: any) => {   // DEV
       return ({
          caption: imgObj.caption,
          src: finalSrc,
-         thumb: thumbSrc
+         thumbSrc: thumbSrc
       })
    });
 

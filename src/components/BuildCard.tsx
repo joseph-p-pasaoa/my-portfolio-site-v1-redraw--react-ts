@@ -39,25 +39,30 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
       <article className='build-card'>
          <h4>{build.name}</h4>
 
-         <Carousel onClick={handleCarouselClick}>
-            {build.imgs.map((imgObj: any) => {
-               return(
-                  <Carousel.Item>
-                     <img
-                        // className="d-block w-100"
-                        src={imgObj.thumb}
-                        alt={imgObj.caption}
-                        data-src={imgObj.src}
-                        key={imgObj.thumb}
-                     />
-                     <Carousel.Caption>
-                        {/* <h3>First slide label</h3> */}
-                        <p>{imgObj.caption}</p>
-                     </Carousel.Caption>
-                  </Carousel.Item>
-               );
-            })}
-         </Carousel>
+         <figure className='build-carousel'>
+            <Carousel
+               onClick={handleCarouselClick}
+               interval={null}
+            >
+               {build.imgs.map((imgObj: any) => {
+                  return(
+                     <Carousel.Item>
+                        <img
+                           // className="d-block w-100"
+                           src={imgObj.thumbSrc}
+                           alt={imgObj.caption}
+                           data-src={imgObj.src}
+                           key={imgObj.thumbSrc}
+                        />
+                        <Carousel.Caption>
+                           {/* <h3>First slide label</h3> */}
+                           <p>{imgObj.caption}</p>
+                        </Carousel.Caption>
+                     </Carousel.Item>
+                  );
+               })}
+            </Carousel>
+         </figure>
 
       </article>
    );
