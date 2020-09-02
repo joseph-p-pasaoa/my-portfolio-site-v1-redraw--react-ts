@@ -4,13 +4,73 @@
     align-items: center;
 }
 
+.modal-dialog {
+    @media (min-width: 576px) {
+        max-width: none;
+        margin: .5rem;
+    }
+}
+
 .modal-body img {
     max-height: 80vh;   // tweak as necessary
 }
 
-.lightbox-base {
-    @media (min-width: 576px) {
-        max-width: none;
-        margin: 1% 5%;
+.carousel,
+.carousel-inner {
+    max-width: 26.5rem;
+}
+
+.carousel {
+    padding: .5rem 0;
+    border-radius: 0.2rem;
+    border: 3px groove #403030;
+    background-color: #131313;
+}
+
+ol.carousel-indicators {
+    width: fit-content;
+    margin: 0 auto;
+
+    li {
+        width: 20px;
     }
+}
+
+.carousel-item img {
+    height: 14rem;
+    margin: 0 auto;
+    max-width: 22rem;
+    object-fit: scale-down;
+}
+
+.carousel-caption {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0;
+
+    line-height: 1;
+}
+
+$carousel-padding-b: 1.5rem;
+
+.carousel {
+    padding-bottom: $carousel-padding-b;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 2.1rem;
+    margin-bottom: $carousel-padding-b;
+
+    background-color: #614b3ed6
+}
+
+$carousel-control-b-radius: .4rem;
+
+.carousel-control-prev {
+    border-radius: $carousel-control-b-radius 0 0 $carousel-control-b-radius;
+}
+
+.carousel-control-next {
+    border-radius: 0 $carousel-control-b-radius $carousel-control-b-radius 0;
 }
