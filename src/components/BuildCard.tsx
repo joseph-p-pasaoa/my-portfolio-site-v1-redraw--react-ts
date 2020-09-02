@@ -5,7 +5,7 @@ interface BuildObject {
    name: string;
    role?: string;
    description?: string;
-   imgs?: any;    // DEV
+   imgs?: Array<ImageObject>;
    urlLive?: string;
    urlRepo?: string;
    techs?: Array<string>;
@@ -19,6 +19,12 @@ interface BuildCardProps {
    build: BuildObject;
    setShowLightbox: any;   // DEV
    setModalImage: any;     // DEV
+}
+
+interface ImageObject {
+   thumb: string;
+   caption: string;
+   src: string;
 }
 
 
@@ -40,7 +46,7 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
          <h4>{build.name}</h4>
 
          <Carousel onClick={handleCarouselClick}>
-            {build.imgs.map((imgObj: any) => {
+            {build.imgs.map(imgObj => {
                return(
                   <Carousel.Item>
                      <img
