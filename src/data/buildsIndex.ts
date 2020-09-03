@@ -35,7 +35,7 @@ interface InitialBuildObject extends BaseBuildObject {
    imgs: Array<BaseImageObject>;
 }
 
-interface DisplayBuildObject extends BaseBuildObject {
+export interface DisplayBuildObject extends BaseBuildObject {
    imgs: Array<DisplayImageObject>;
 }
 

@@ -1,37 +1,35 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-interface BuildObject {
-   name: string;
-   role?: string;
-   description?: string;
-   imgs: Array<ImageObject>;
-   urlLive?: string;
-   urlRepo?: string;
-   techs?: Array<string>;
-   obstacles?: string;
-   wins?: string;
-   features?: Array<string>;
-   responsibilities?: string;
+import { DisplayBuildObject } from '../data/buildsIndex';
+
+interface CarouselImageClickEvent extends React.MouseEvent<HTMLInputElement> {
+   target: CarouselClickTarget;
+}
+
+interface CarouselClickTarget extends EventTarget {
+   alt: string;
+   dataset: {
+      src: string;
+   }
+}
+
+interface ModalImageObject {
+   src: string;
+   caption: string;
 }
 
 interface BuildCardProps {
-   build: BuildObject;
-   setShowLightbox: any;   // DEV
-   setModalImage: any;     // DEV
-}
-
-interface ImageObject {
-   thumbSrc: string;
-   caption: string;
-   src: string;
+   build: DisplayBuildObject;
+   setShowLightbox: (arg0: boolean) => void;
+   setModalImage: (arg1: ModalImageObject) => void;
 }
 
 
 const BuildCard: React.FC<BuildCardProps> = (props) => {
    const { build, setShowLightbox, setModalImage } = props;
 
-   const handleCarouselClick = (e: any) => {
+   const handleCarouselClick = (e: CarouselImageClickEvent) => {
       if (e.target.dataset.src) {
          setModalImage({
             src: e.target.dataset.src,
@@ -56,7 +54,7 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
                         <img
                            src={imgObj.thumbSrc}
                            alt={imgObj.caption}
-                           data-src={imgObj.src}
+                           data-src={imgObj.largeSrc}
                            // className="d-block w-100"
                         />
                         <Carousel.Caption>
