@@ -34,6 +34,10 @@ ol.carousel-indicators {
 
     li {
         width: 20px;
+
+        &.active {
+            background-color: var(--color-primary);
+        }
     }
 }
 
