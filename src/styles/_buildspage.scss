@@ -43,7 +43,7 @@ ol.carousel-indicators {
 
 .carousel-item img {
     margin: 0 auto;
-    height: min(58vw, 224px);
+    height: calc(min(58vw, 224px));
     object-fit: scale-down;
     object-position: top;
 
