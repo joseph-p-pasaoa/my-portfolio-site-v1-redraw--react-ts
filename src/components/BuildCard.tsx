@@ -50,19 +50,18 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
                onClick={handleCarouselClick}
                interval={null}
             >
-               {build.imgs.map(imgObj => {
+               {build.imgs.map((imgObj, index) => {
                   return(
-                     <Carousel.Item>
+                     <Carousel.Item key={imgObj.thumbSrc}>
                         <img
-                           // className="d-block w-100"
                            src={imgObj.thumbSrc}
                            alt={imgObj.caption}
                            data-src={imgObj.src}
-                           key={imgObj.thumbSrc}
+                           // className="d-block w-100"
                         />
                         <Carousel.Caption>
                            {/* <h3>First slide label</h3> */}
-                           <p>{imgObj.caption}</p>
+                           <p>{`${index + 1}. ${imgObj.caption}`}</p>
                         </Carousel.Caption>
                      </Carousel.Item>
                   );
