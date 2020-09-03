@@ -1,4 +1,7 @@
 import endeavorBase from './builds/endeavor';
+const importedBuilds = [
+   endeavorBase,
+];
 
 const path = require('path');
 const buildImagesPath = '/images/builds';
@@ -62,9 +65,7 @@ const buildImgs = (buildObj: InitialBuildObject): DisplayBuildObject =>  {
    return {...buildObj, imgs: finalImgs};
 }
 
-const builds = [
-   endeavorBase,
-].map(base => buildImgs(base));
+const builds = importedBuilds.map(base => buildImgs(base));
 
 
 export default builds;
