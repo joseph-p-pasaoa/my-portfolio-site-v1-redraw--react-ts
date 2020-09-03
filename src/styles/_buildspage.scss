@@ -5,6 +5,8 @@
 }
 
 .modal-dialog {
+    margin: 2rem 0;
+
     @media (min-width: 576px) {
         max-width: none;
         margin: .5rem;
@@ -21,7 +23,7 @@
 }
 
 .carousel {
-    border-radius: 0.2rem;
+    border-radius: .4rem;
     border: 3px groove #403030;
     background-color: #151515;
 }
@@ -41,7 +43,7 @@ ol.carousel-indicators {
 
 .carousel-item img {
     margin: 0 auto;
-    height: 14rem;
+    height: min(58vw, 224px);
     object-fit: scale-down;
     object-position: top;
 
