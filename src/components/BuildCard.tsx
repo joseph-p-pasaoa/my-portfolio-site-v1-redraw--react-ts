@@ -1,9 +1,9 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+import BuildCarousel from './BuildCard/BuildCarousel';
 
 import { DisplayBuildObject } from '../data/buildsIndex';
 
-interface CarouselImageClickEvent extends React.MouseEvent<HTMLInputElement> {
+export interface CarouselImageClickEvent extends React.MouseEvent<HTMLInputElement> {
    target: CarouselClickTarget;
 }
 
@@ -39,33 +39,15 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
       }
    }
 
+
    return(
       <article className='build-card'>
          <h4>{build.name}</h4>
 
-         <figure className='build-carousel'>
-            <Carousel
-               onClick={handleCarouselClick}
-               interval={null}
-            >
-               {build.imgs.map((imgObj, index) => {
-                  return(
-                     <Carousel.Item key={imgObj.thumbSrc}>
-                        <img
-                           src={imgObj.thumbSrc}
-                           alt={imgObj.caption}
-                           data-src={imgObj.largeSrc}
-                           // className="d-block w-100"
-                        />
-                        <Carousel.Caption>
-                           {/* <h3>First slide label</h3> */}
-                           <p>{`${index + 1}. ${imgObj.caption}`}</p>
-                        </Carousel.Caption>
-                     </Carousel.Item>
-                  );
-               })}
-            </Carousel>
-         </figure>
+         <BuildCarousel
+            build={build}
+            handleCarouselClick={handleCarouselClick}
+         />
 
       </article>
    );
