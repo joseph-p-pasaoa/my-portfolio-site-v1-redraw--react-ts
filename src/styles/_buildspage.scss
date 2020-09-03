@@ -28,10 +28,6 @@
     background-color: #151515;
 }
 
-.carousel-inner {
-    padding-bottom: 1.7rem;
-}
-
 ol.carousel-indicators {
     width: fit-content;
     margin: 0 auto;
@@ -61,14 +57,18 @@ ol.carousel-indicators {
     line-height: 1;
 }
 
-$carousel-padding-b: 1.5rem;
+$padding-for-indicators: 1.5rem;
+$padding-for-titles: 1.7rem;
 .carousel {
-    padding-bottom: $carousel-padding-b;
+    padding-bottom: $padding-for-indicators;
+}
+.carousel-inner {
+    padding-bottom: $padding-for-titles;
 }
 .carousel-control-prev,
 .carousel-control-next {
     width: 2.1rem;
-    margin-bottom: $carousel-padding-b;
+    margin-bottom: calc(#{$padding-for-titles} + #{$padding-for-indicators});
 }
 
 $carousel-control-b-radius: .4rem;
