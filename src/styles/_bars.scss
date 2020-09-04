@@ -98,6 +98,7 @@
 .topbar {
     @include flex-straight(column, flex-start, flex-end);
 
+    min-height: fit-content;
     z-index: 1000;
 
     .hamburger {
