@@ -1,7 +1,7 @@
 const endeavor = {
    name: "Endeavor",
    buildName: 'endeavor',
-   description: `Endeavor is a software platform empowering organizations to manage their volunteer workforce amid events seamlessly.`,
+   description: `A platform empowering organizations in managing their volunteer workforce amid organizational events seamlessly.`,
    imgs: [
       { caption: "Admin's Dashboard",
          filename: '1-admin-dash.png' },
@@ -13,7 +13,7 @@ const endeavor = {
          filename: '4-vol-signup.png' },
       { caption: 'Volunteer\'s Dashboard',
          filename: '5-vol-dash-iphone.png' },
-      { caption: 'Admin\'s New Volunteers Module',
+      { caption: 'Admin\'s New Volunteers Dash (gif)',
          filename: '6-newvols-anim.gif' }
    ],
    urlLive: "https://endeavor-app.herokuapp.com/",
