@@ -74,9 +74,10 @@ ol.carousel-indicators {
 
     li {
         width: 20px;
+        border-top-width: 2px;
 
         &.active {
-            background-color: var(--color-primary);
+            background-color: red;
         }
     }
 }
@@ -107,8 +108,8 @@ ol.carousel-indicators {
     }
 }
 
-$padding-for-indicators: 1.5rem;
-$padding-for-titles: 1.7rem;
+$padding-for-indicators: 1rem;
+$padding-for-titles: 2.2rem;
 .carousel {
     padding-bottom: $padding-for-indicators;
 }
