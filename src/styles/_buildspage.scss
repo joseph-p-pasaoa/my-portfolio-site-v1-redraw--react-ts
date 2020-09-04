@@ -99,6 +99,10 @@ ol.carousel-indicators {
     top: 101%;
 
     line-height: 1;
+
+    p {
+        white-space: pre-line;
+    }
 }
 
 $padding-for-indicators: 1.5rem;

@@ -13,7 +13,7 @@ const endeavor = {
          filename: '4-vol-signup.png' },
       { caption: 'Volunteer\'s Dashboard',
          filename: '5-vol-dash-iphone.png' },
-      { caption: 'Admin\'s New Volunteers Dash (gif)',
+      { caption: 'Admin\'s New Volunteers Dash\n(click for animation)',
          filename: '6-newvols-anim.gif' }
    ],
    urlLive: "https://endeavor-app.herokuapp.com/",
