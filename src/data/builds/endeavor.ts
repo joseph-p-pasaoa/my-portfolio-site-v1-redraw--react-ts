@@ -16,8 +16,8 @@ const endeavor = {
       { caption: 'Admin\'s New Volunteers Dash\n(click for animation)',
          filename: '6-newvols-anim.gif' }
    ],
-   urlLive: "https://endeavor-app.herokuapp.com/",
-   urlRepo: "https://github.com/joseph-p-pasaoa/Endeavor",
+   liveUrl: "https://endeavor-app.herokuapp.com/",
+   repoUrl: "https://github.com/joseph-p-pasaoa/endeavor--fs-web--clone",
    techs: [
       "PostgreSQL 12.1",
       "React 16.13.1",

@@ -22,8 +22,8 @@ interface BaseBuildObject {
    buildName: string,
    role?: string;
    description?: string;
-   urlLive?: string;
-   urlRepo?: string;
+   liveUrl?: string;
+   repoUrl?: string;
    techs?: Array<string>;
    obstacles?: string;
    wins?: string;

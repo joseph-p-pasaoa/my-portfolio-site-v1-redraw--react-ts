@@ -45,6 +45,24 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
       <article className='build-card'>
          <h4>{`${index + 1}. ${build.name}`}</h4>
 
+         <div className="build-buttons">
+            <a
+               href={build.liveUrl}
+               target='_blank'
+               rel='noopener noreferrer'
+               className='primary-button'
+            >
+               Live
+            </a>
+            <a
+               href={build.repoUrl}
+               target='_blank'
+               rel='noopener noreferrer'
+               className='primary-button'
+            >
+               Repo
+            </a>
+         </div>
          <BuildCarousel
             imgs={build.imgs}
             handleCarouselClick={handleCarouselClick}
