@@ -62,8 +62,8 @@
 
 .carousel {
     border-radius: .4rem;
-    border: 3px groove #403030;
-    background-color: #151515;
+    border: 3px double #5d2020;
+    background: var(--bg-smooth-gray);
 }
 
 ol.carousel-indicators {
