@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 import { DisplayBuildObject } from '../../data/buildsIndex';
-import { CarouselImageClickEvent } from '../BuildCard';
+import { CarouselImageClickEvent } from './BuildCard';
 
 interface BuildCarouselProps {
    build: DisplayBuildObject;

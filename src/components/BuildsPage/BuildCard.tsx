@@ -1,7 +1,7 @@
 import React from 'react';
-import BuildCarousel from './BuildCard/BuildCarousel';
+import BuildCarousel from './BuildCarousel';
 
-import { DisplayBuildObject } from '../data/buildsIndex';
+import { DisplayBuildObject } from '../../data/buildsIndex';
 
 export interface CarouselImageClickEvent extends React.MouseEvent<HTMLInputElement> {
    target: CarouselClickTarget;

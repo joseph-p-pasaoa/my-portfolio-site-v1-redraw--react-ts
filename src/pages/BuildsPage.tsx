@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 
 import builds from '../data/buildsIndex';
-import BuildCard from '../components/BuildCard';
+import BuildCard from '../components/BuildsPage/BuildCard';
 
 
 const BuildsPage = () => {
