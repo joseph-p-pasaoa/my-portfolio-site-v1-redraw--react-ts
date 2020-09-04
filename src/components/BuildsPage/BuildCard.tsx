@@ -14,7 +14,7 @@ interface CarouselClickTarget extends EventTarget {
    }
 }
 
-interface ModalImageObject {
+export interface ModalImageObject {
    src: string;
    caption: string;
 }

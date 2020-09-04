@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
 
-import builds from '../data/buildsIndex';
 import BuildCard from '../components/BuildsPage/BuildCard';
+import Lightbox from '../components/BuildsPage/Lightbox';
+import builds from '../data/buildsIndex';
 
 
 const BuildsPage = () => {
@@ -25,24 +25,11 @@ const BuildsPage = () => {
             );
          })}
 
-         <Modal
-            show={showLightbox}
-            onHide={() => setShowLightbox(false)}
-            dialogClassName="lightbox-base"
-            aria-labelledby="build-lightbox"
-         >
-            <Modal.Header closeButton>
-               <Modal.Title id="build-lightbox">
-                  {modalImage.caption}
-               </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-               <img
-                  src={modalImage.src}
-                  alt={modalImage.caption}
-               />
-            </Modal.Body>
-         </Modal>
+         <Lightbox
+            showLightbox={showLightbox}
+            setShowLightbox={setShowLightbox}
+            modalImage={modalImage}
+         />
       </main>
    );
 }
