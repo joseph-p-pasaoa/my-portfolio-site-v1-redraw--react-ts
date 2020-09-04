@@ -91,10 +91,12 @@ ol.carousel-indicators {
 }
 
 .carousel-caption {
+    left: 0;
+    right: 0;
     width: fit-content;
     margin: 0 auto;
     padding: 0;
-    bottom: -11%;
+    top: 101%;
 
     line-height: 1;
 }
