@@ -57,85 +57,86 @@
     }
 }
 
-.carousel,
-.carousel-inner {
-    max-width: 26.5rem;
-}
-
 .carousel {
     border-radius: .4rem;
     border: 3px double var(--color-white);
     background: var(--bg-smooth-gray);
-}
 
-ol.carousel-indicators {
-    width: fit-content;
-    margin: 0 auto;
+    &,
+    &-inner {
+        max-width: 26.5rem;
+    }
 
-    li {
-        width: 20px;
-        border-top-width: 2px;
+    /** carousel
+      *     indicators
+      *     inner
+      *         item > img
+      *         caption > p
+      *     prev/next arrows
+      */
 
-        &.active {
-            background-color: red;
+    ol.carousel-indicators {
+        width: fit-content;
+        margin: 0 auto;
+
+        li {
+            width: 20px;
+            border-top-width: 2px;
+
+            &.active {
+                background-color: red;
+            }
         }
     }
-}
 
-.carousel-item img {
-    margin: 0 auto;
-    height: calc(min(58vw, 224px));
-    object-fit: scale-down;
-    object-position: top;
+    &-item img {
+        margin: 0 auto;
+        height: calc(min(58vw, 224px));
+        object-fit: scale-down;
+        object-position: top;
 
-    cursor: zoom-in;
+        cursor: zoom-in;
 
-    @media (min-width: 575px) {
-        padding: 0 2.25rem;
+        @media (min-width: 575px) {
+            padding: 0 2.25rem;
+        }
     }
-}
 
-.carousel-caption {
-    @include flex-straight(row, center, center);
+    &-caption {
+        @include flex-straight(row, center, center);
 
-    left: 0;
-    bottom: unset;
-    right: 0;
-    top: 101%;
-    width: fit-content;
-    height: 2rem;
-    margin: 0 auto;
-    padding: 0 .5rem;
+        left: 0;
+        bottom: unset;
+        right: 0;
+        top: 101%;
+        width: fit-content;
+        height: 2rem;
+        margin: 0 auto;
+        padding: 0 .5rem;
 
-    line-height: 1;
+        line-height: 1;
 
-    p {
-        white-space: pre-line;
+        p {
+            white-space: pre-line;
+        }
     }
-}
 
-$padding-for-indicators: 1rem;
-$padding-for-titles: 2.2rem;
-.carousel {
-    padding-bottom: $padding-for-indicators;
-}
-.carousel-inner {
-    padding-bottom: $padding-for-titles;
-}
-.carousel-control-prev,
-.carousel-control-next {
-    width: 2.1rem;
-    margin-bottom: calc(#{$padding-for-titles} + #{$padding-for-indicators});
-}
+    // padding for caption + indicators at bottom
+    $padding-for-indicators: 1rem;
+    $padding-for-titles: 2.2rem;
+    & {
+        padding-bottom: $padding-for-indicators;
+    }
+    &-inner {
+        padding-bottom: $padding-for-titles;
+    }
+    &-control-prev,
+    &-control-next {
+        width: 2.1rem;
+        margin-bottom: calc(#{$padding-for-titles} + #{$padding-for-indicators});
+    }
 
-$carousel-control-b-radius: .4rem;
-.carousel-control-prev {
-    border-radius: $carousel-control-b-radius 0 0 $carousel-control-b-radius;
-}
-.carousel-control-next {
-    border-radius: 0 $carousel-control-b-radius $carousel-control-b-radius 0;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    filter: var(--filter-int-dshadow) drop-shadow(4px 2px 3px #000);
+    &-control-prev-icon, &-control-next-icon {
+        filter: var(--filter-int-dshadow) drop-shadow(4px 2px 3px #000);
+    }
 }
