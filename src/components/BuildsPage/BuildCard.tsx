@@ -45,12 +45,12 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
       <article className='build-card'>
          <h4>{`${index + 1}. ${build.name}`}</h4>
 
-         <p className='description'>{build.description}</p>
-
          <BuildCarousel
             imgs={build.imgs}
             handleCarouselClick={handleCarouselClick}
          />
+
+         <p className='description'>{build.description}</p>
 
       </article>
    );
