@@ -21,13 +21,14 @@ export interface ModalImageObject {
 
 interface BuildCardProps {
    build: DisplayBuildObject;
+   index: number;
    setShowLightbox: (arg0: boolean) => void;
    setModalImage: (arg1: ModalImageObject) => void;
 }
 
 
 const BuildCard: React.FC<BuildCardProps> = (props) => {
-   const { build, setShowLightbox, setModalImage } = props;
+   const { build, index, setShowLightbox, setModalImage } = props;
 
    const handleCarouselClick = (e: CarouselImageClickEvent) => {
       if (e.target.dataset.src) {
@@ -42,10 +43,11 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
 
    return(
       <article className='build-card'>
-         <h4>{build.name}</h4>
+         <h4>{`${index + 1}. ${build.name}`}</h4>
+
 
          <BuildCarousel
-            build={build}
+            imgs={build.imgs}
             handleCarouselClick={handleCarouselClick}
          />
 

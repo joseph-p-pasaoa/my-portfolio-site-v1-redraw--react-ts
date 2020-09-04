@@ -11,7 +11,7 @@ interface BaseImageObject {
    filename: string;
 }
 
-interface DisplayImageObject {
+export interface DisplayImageObject {
    caption: string;
    thumbSrc: string;
    largeSrc: string;

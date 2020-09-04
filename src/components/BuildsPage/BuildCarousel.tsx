@@ -1,23 +1,23 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-import { DisplayBuildObject } from '../../data/buildsIndex';
+import { DisplayImageObject } from '../../data/buildsIndex';
 import { CarouselImageClickEvent } from './BuildCard';
 
 interface BuildCarouselProps {
-   build: DisplayBuildObject;
+   imgs: Array<DisplayImageObject>;
    handleCarouselClick: (arg0: CarouselImageClickEvent) => void;
 }
 
 
-const BuildCarousel: React.FC<BuildCarouselProps> = ({build, handleCarouselClick}) => {
+const BuildCarousel: React.FC<BuildCarouselProps> = ({imgs, handleCarouselClick}) => {
    return (
       <figure className='build-carousel'>
          <Carousel
             onClick={handleCarouselClick}
             interval={null}
          >
-            {build.imgs.map((imgObj, index) => {
+            {imgs.map((imgObj, index) => {
                return(
                   <Carousel.Item key={imgObj.thumbSrc}>
                      <img

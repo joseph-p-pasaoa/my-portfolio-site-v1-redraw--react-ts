@@ -14,10 +14,11 @@ const BuildsPage = () => {
       <main className='builds-page'>
          <h4 className='page__title no-flow'>Builds</h4>
 
-         {builds.map(build => {
+         {builds.map((build, index) => {
             return(
                <BuildCard
                   build={build}
+                  index={index}
                   setShowLightbox={setShowLightbox}
                   setModalImage={setModalImage}
                   key={build.buildName}
