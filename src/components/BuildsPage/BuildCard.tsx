@@ -52,6 +52,7 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
                target='_blank'
                rel='noopener noreferrer'
                className='primary-button'
+               data-name='live-link'
             >
                <span>Live</span>
                <FontAwesomeIcon icon={['fas', 'running']} className='fontawesome-icon--button' />
@@ -61,6 +62,7 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
                target='_blank'
                rel='noopener noreferrer'
                className='primary-button'
+               data-name='repo-link'
             >
                <span>Repo</span>
                <FontAwesomeIcon icon={['fab', 'git-alt']} className='fontawesome-icon--button' />
