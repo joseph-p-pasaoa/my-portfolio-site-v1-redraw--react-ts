@@ -1,6 +1,7 @@
 import React from 'react';
 import BuildCarousel from './BuildCarousel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import BuildButtons from './BuildButtons';
 
 import { ProcessedBuildObject } from '../../data/buildsIndex';
 
@@ -46,28 +47,10 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
       <article className='build-card'>
          <h4>{`${index + 1}. ${build.name}`}</h4>
 
-         <div className='build-buttons flow--row'>
-            <a
-               href={build.liveUrl}
-               target='_blank'
-               rel='noopener noreferrer'
-               className='primary-button'
-               data-name='live-link'
-            >
-               <span>Live</span>
-               <FontAwesomeIcon icon={['fas', 'running']} className='fontawesome-icon--button' />
-            </a>
-            <a
-               href={build.repoUrl}
-               target='_blank'
-               rel='noopener noreferrer'
-               className='primary-button'
-               data-name='repo-link'
-            >
-               <span>Repo</span>
-               <FontAwesomeIcon icon={['fab', 'git-alt']} className='fontawesome-icon--button' />
-            </a>
-         </div>
+         <BuildButtons
+            liveUrl={build.liveUrl}
+            repoUrl={build.repoUrl}
+         />
          <BuildCarousel
             imgs={build.imgs}
             handleCarouselClick={handleCarouselClick}
