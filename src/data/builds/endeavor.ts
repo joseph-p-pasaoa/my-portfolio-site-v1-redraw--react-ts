@@ -13,8 +13,9 @@ const endeavor = {
          filename: '4-vol-signup.png' },
       { caption: 'Volunteer\'s Dashboard',
          filename: '5-vol-dash-iphone.png' },
-      { caption: 'Admin\'s New Volunteers Dash\n(click for animation)',
-         filename: '6-newvols-anim.gif' }
+      { caption: 'Admin\'s New Volunteers Dash',
+         filename: '6-newvols-anim.gif',
+         special: 'animation' }
    ],
    liveUrl: "https://endeavor-app.herokuapp.com/",
    repoUrl: "https://github.com/joseph-p-pasaoa/endeavor--fs-web--clone",

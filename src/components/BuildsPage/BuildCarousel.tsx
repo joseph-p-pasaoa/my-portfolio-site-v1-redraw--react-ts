@@ -18,6 +18,14 @@ const BuildCarousel: React.FC<BuildCarouselProps> = ({imgs, handleCarouselClick}
             interval={null}
          >
             {imgs.map((imgObj, index) => {
+               let thumbCaption = imgObj.caption;
+               switch (imgObj.note) {
+                  case 'animation':
+                     thumbCaption += '\n(click for animation)';
+                     break;
+                  default:
+                     break;
+               }
                return(
                   <Carousel.Item key={imgObj.thumbSrc}>
                      <img
@@ -28,7 +36,7 @@ const BuildCarousel: React.FC<BuildCarouselProps> = ({imgs, handleCarouselClick}
                      />
                      <Carousel.Caption>
                         {/* <h3>First slide label</h3> */}
-                        <p>{`${index + 1}. ${imgObj.caption}`}</p>
+                        <p>{`${index + 1}. ${thumbCaption}`}</p>
                      </Carousel.Caption>
                   </Carousel.Item>
                );

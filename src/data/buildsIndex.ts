@@ -59,11 +59,12 @@ const buildImgs = (buildObj: InitialBuildObject): ProcessedBuildObject =>  {
          't' + imgObj.filename
       );
 
-      return ({
+      return {
          caption: imgObj.caption,
          largeSrc: finalSrc,
-         thumbSrc: thumbSrc
-      })
+         thumbSrc: thumbSrc,
+         note: imgObj.special ? imgObj.special : null
+      };
    });
 
    return {...buildObj, imgs: finalImgs};
