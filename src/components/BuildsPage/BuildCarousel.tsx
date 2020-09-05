@@ -1,6 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
+import numToLetter from '../../utils/numToLetter';
+
 import { ProcessedImgObject } from '../../data/buildsIndex';
 import { CarouselImageClickEvent } from './BuildCard';
 
@@ -39,7 +41,7 @@ const BuildCarousel: React.FC<BuildCarouselProps> = ({imgs, handleCarouselClick}
                      />
                      <Carousel.Caption>
                         {/* <h3>First slide label</h3> */}
-                        <p>{`${index + 1}. ${thumbCaption}`}</p>
+                        <p>{`${numToLetter(index + 1)}. ${thumbCaption}`}</p>
                      </Carousel.Caption>
                   </Carousel.Item>
                );
