@@ -1,9 +1,54 @@
-interface iconData {
-   [key: string]: string;
-}
+export type KnownTech =
+   // DEVELOPMENT
+   | 'Javascript (ES5+)'
+   | 'Typescript'
+   | 'Python'
+   | 'HTML5'
+   | 'CSS3'
+   | 'SCSS'
+   | 'PostgreSQL'
+   | 'Heroku'
+   | 'Netlify'
+   | 'Firebase'
+   | 'Gatsby'
+
+   // LIBRARIES, FRAMEWORKS, RUNTIMES
+   | 'ReactJS'
+   | 'React Redux'
+   | 'React Router'
+   | 'ExpressJS'
+   | 'NodeJS'
+
+   // TOOLS
+   | 'Git'
+   | 'Github'
+   | 'Jest'
+   | 'Chrome DevTools'
+   | 'Firefox Developer'
+   | 'VS Code'
+   | 'Npm'
+   | 'Postman'
+
+   // DESIGN, CREATE
+   | 'Figma'
+   | 'Bootstrap'
+   | 'Diagrams.net (Draw.io)'
+   | 'Adobe XD'
+   | 'Adobe Photoshop'
+   | 'Adobe InDesign'
+   | 'Adobe Premiere Pro'
+   | 'Adobe Lightroom'
+
+   // PRODUCTIVITY
+   | 'Trello'
+   | 'Basecamp';
+
+type IconData = {
+   [K in KnownTech]: string
+};
 
 
-export const techIcons: iconData = {
+export const techIcons: IconData = {
    // DEVELOPMENT
    'Javascript (ES5+)': require('../assets/images/tech-icons/js.svg'),
    'Typescript': require('../assets/images/tech-icons/typescript.svg'),
