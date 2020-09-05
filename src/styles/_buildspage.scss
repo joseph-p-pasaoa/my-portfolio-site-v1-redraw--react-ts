@@ -4,6 +4,38 @@
         text-transform: lowercase;
         color: var(--color-primary);
     }
+
+    .build-buttons {
+        @include flex-straight(row);
+
+        a {
+            @include flex-straight(row, center, center);
+
+            width: 7rem;
+            padding: .2rem 0 .1rem;
+            border: 2px solid var(--color-white);
+            border-radius: 1rem;
+
+            background: var(--bg-smooth-gray);
+
+            @include neutral-link();
+
+            span {
+                margin-left: .4rem;
+
+                font-family: var(--ff-accent);
+                font-weight: bold;
+            }
+
+            .fontawesome-icon--button {
+                position: relative;
+                top: -1px;
+                margin-left: .3rem;
+
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
 .modal {
