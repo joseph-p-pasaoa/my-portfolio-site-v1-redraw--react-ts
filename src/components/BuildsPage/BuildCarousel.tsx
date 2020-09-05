@@ -19,6 +19,8 @@ const BuildCarousel: React.FC<BuildCarouselProps> = ({imgs, handleCarouselClick}
          >
             {imgs.map((imgObj, index) => {
                let thumbCaption = imgObj.caption;
+
+               // treatments for special image types
                switch (imgObj.note) {
                   case 'animation':
                      thumbCaption += '\n(click for animation)';
@@ -26,6 +28,7 @@ const BuildCarousel: React.FC<BuildCarouselProps> = ({imgs, handleCarouselClick}
                   default:
                      break;
                }
+
                return(
                   <Carousel.Item key={imgObj.thumbSrc}>
                      <img

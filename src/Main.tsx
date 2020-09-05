@@ -2,7 +2,8 @@ import React from 'react';
 import { useLocation, Switch, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEdit, faFileAlt } from '@fortawesome/free-regular-svg-icons';
-import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 
 import './Main.scss';
 import LayoutBase from './components/LayoutBase';
@@ -15,7 +16,7 @@ import AboutMePage from './pages/AboutMePage';
 import PageEnd from './components/PageEnd';
 
 // activate and populate FontAwesome sitewide icon library
-library.add(faEdit, faFileAlt, faGithubSquare, faLinkedin);
+library.add(faEdit, faFileAlt, faGithubSquare, faGithub, faLinkedin, faPlayCircle);
 
 
 export default function Main() {

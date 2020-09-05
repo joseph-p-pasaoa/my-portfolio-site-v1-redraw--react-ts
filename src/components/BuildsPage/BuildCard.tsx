@@ -1,5 +1,6 @@
 import React from 'react';
 import BuildCarousel from './BuildCarousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { ProcessedBuildObject } from '../../data/buildsIndex';
 
