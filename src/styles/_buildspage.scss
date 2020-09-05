@@ -17,8 +17,7 @@
             border-radius: 1rem;
 
             background: var(--bg-smooth-gray);
-
-            @include neutral-link();
+            transition: border-color .3s ease-out;
 
             span {
                 margin-left: .4rem;
@@ -33,6 +32,37 @@
                 margin-left: .3rem;
 
                 font-size: 1rem;
+            }
+
+            @include neutral-link();
+
+            &[data-name='live-link'] {
+                $live-link-color: lime;
+                &:link, &:visited {
+                    svg {
+                        color: $live-link-color;
+                    }
+                }
+                &:hover {
+                    border-color: $live-link-color;
+                }
+            }
+            &[data-name='repo-link'] {
+                $repo-link-color: #d60a0a;
+                &:link, &:visited {
+                    svg{
+                        color: $repo-link-color;
+                    }
+                }
+                &:hover {
+                    border-color: $repo-link-color;
+                }
+            }
+
+            &:active {
+                position: relative;
+                top: 1px;
+                left: 1px;
             }
         }
     }
@@ -126,7 +156,7 @@
             border-top-width: 2px;
 
             &.active {
-                background-color: red;
+                background-color: #ff8100;
             }
         }
     }
