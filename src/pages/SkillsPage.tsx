@@ -2,13 +2,15 @@ import React from 'react'
 
 import TechIcon from '../components/TechIcon';
 
+import { KnownTech } from '../data/techIconsData';
+
 type PrintSkillBlock = (
    title: string,
-   techNames: string[]
+   techNames: KnownTech[]
 ) => JSX.Element;
 
 
-const devSkills = [
+const devSkills: Array<KnownTech> = [
    'Javascript (ES5+)',
    'Typescript',
    'Python',
@@ -22,7 +24,7 @@ const devSkills = [
    'Gatsby'
 ];
 
-const libsSkills = [
+const libsSkills: Array<KnownTech> = [
    'ReactJS',
    'React Redux',
    'React Router',
@@ -30,7 +32,7 @@ const libsSkills = [
    'NodeJS'
 ];
 
-const toolsSkills = [
+const toolsSkills: Array<KnownTech> = [
    'Git',
    'Github',
    'Jest',
@@ -41,7 +43,7 @@ const toolsSkills = [
    'Postman'
 ];
 
-const designSkills = [
+const designSkills: Array<KnownTech> = [
    'Figma',
    'Bootstrap',
    'Diagrams.net (Draw.io)',
@@ -52,7 +54,7 @@ const designSkills = [
    'Adobe Lightroom'
 ];
 
-const productivitySkills = [
+const productivitySkills: Array<KnownTech> = [
    'Trello',
    'Basecamp'
 ];

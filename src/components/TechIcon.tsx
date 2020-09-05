@@ -1,9 +1,9 @@
 import React from 'react'
 
-import techIcons from '../data/techIconsData';
+import techIcons, { KnownTech } from '../data/techIconsData';
 
 interface TechIconProps {
-   name: string;
+   name: KnownTech;
    className?: string;
 }
 
