@@ -46,14 +46,15 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
       <article className='build-card'>
          <h4>{`${index + 1}. ${build.name}`}</h4>
 
-         <div className="build-buttons">
+         <div className="build-buttons flow--row">
             <a
                href={build.liveUrl}
                target='_blank'
                rel='noopener noreferrer'
                className='primary-button'
             >
-               Live
+               <span>Live</span>
+               <FontAwesomeIcon icon={["fas", "play-circle"]} className="fontawesome-icon--button" />
             </a>
             <a
                href={build.repoUrl}
@@ -61,7 +62,8 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
                rel='noopener noreferrer'
                className='primary-button'
             >
-               Repo
+               <span>Repo</span>
+               <FontAwesomeIcon icon={["fab", "github"]} className="fontawesome-icon--button" />
             </a>
          </div>
          <BuildCarousel
