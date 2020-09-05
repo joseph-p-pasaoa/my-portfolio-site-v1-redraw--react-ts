@@ -1,11 +1,11 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-import { DisplayImageObject } from '../../data/buildsIndex';
+import { ProcessedImgObject } from '../../data/buildsIndex';
 import { CarouselImageClickEvent } from './BuildCard';
 
 interface BuildCarouselProps {
-   imgs: Array<DisplayImageObject>;
+   imgs: Array<ProcessedImgObject>;
    handleCarouselClick: (arg0: CarouselImageClickEvent) => void;
 }
 

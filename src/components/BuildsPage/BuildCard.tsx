@@ -1,7 +1,7 @@
 import React from 'react';
 import BuildCarousel from './BuildCarousel';
 
-import { DisplayBuildObject } from '../../data/buildsIndex';
+import { ProcessedBuildObject } from '../../data/buildsIndex';
 
 export interface CarouselImageClickEvent extends React.MouseEvent<HTMLInputElement> {
    target: CarouselClickTarget;
@@ -20,7 +20,7 @@ export interface ModalImageObject {
 }
 
 interface BuildCardProps {
-   build: DisplayBuildObject;
+   build: ProcessedBuildObject;
    index: number;
    setShowLightbox: (arg0: boolean) => void;
    setModalImage: (arg1: ModalImageObject) => void;

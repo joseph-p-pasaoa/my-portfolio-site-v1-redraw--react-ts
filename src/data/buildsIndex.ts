@@ -1,25 +1,29 @@
 import endeavorBase from './builds/endeavor';
 const importedBuilds = [
    endeavorBase,
-];
+] as InitialBuildObject[];
 
 const path = require('path');
 const buildImagesPath = '/images/builds';
 
-interface BaseImageObject {
+type SpecialImages = "animation";
+
+interface BaseImgObject {
    caption: string;
    filename: string;
+   special?: SpecialImages;
 }
 
-export interface DisplayImageObject {
+export interface ProcessedImgObject {
    caption: string;
    thumbSrc: string;
    largeSrc: string;
+   note: SpecialImages | null;
 }
 
 interface BaseBuildObject {
    name: string;
-   buildName: string,
+   buildName: string;
    role?: string;
    description?: string;
    liveUrl?: string;
@@ -32,15 +36,15 @@ interface BaseBuildObject {
 }
 
 interface InitialBuildObject extends BaseBuildObject {
-   imgs: Array<BaseImageObject>;
+   imgs: Array<BaseImgObject>;
 }
 
-export interface DisplayBuildObject extends BaseBuildObject {
-   imgs: Array<DisplayImageObject>;
+export interface ProcessedBuildObject extends BaseBuildObject {
+   imgs: Array<ProcessedImgObject>;
 }
 
 
-const buildImgs = (buildObj: InitialBuildObject): DisplayBuildObject =>  {
+const buildImgs = (buildObj: InitialBuildObject): ProcessedBuildObject =>  {
    const { buildName, imgs } = buildObj;
 
    const finalImgs = imgs.map(imgObj => {
