@@ -41,10 +41,15 @@
                 &:link, &:visited {
                     svg {
                         color: $live-link-color;
+                        transition: transform .2s ease-out;
                     }
                 }
                 &:hover {
-                    border-color: $live-link-color;
+                    border-color: var(--color-blue);
+
+                    svg {
+                        transform: translateX(18px) scale(3.3);
+                    }
                 }
             }
             &[data-name='repo-link'] {
@@ -52,10 +57,15 @@
                 &:link, &:visited {
                     svg{
                         color: $repo-link-color;
+                        transition: transform .2s ease-out;
                     }
                 }
                 &:hover {
-                    border-color: $repo-link-color;
+                    border-color: var(--color-blue);
+
+                    svg {
+                        transform: translateX(18px) scale(3.3);
+                    }
                 }
             }
 
