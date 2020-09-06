@@ -1,10 +1,12 @@
+import { KnownTech } from '../data/techIconsData';
 import endeavorBase from './builds/endeavor';
-const importedBuilds = [
-   endeavorBase,
-] as InitialBuildObject[];
 
 const path = require('path');
 const buildImagesPath = '/images/builds';
+
+const importedBuilds = [
+   endeavorBase,
+];
 
 type SpecialImages = "animation";
 
@@ -25,17 +27,18 @@ interface BaseBuildObject {
    name: string;
    buildName: string;
    role?: string;
-   description?: string;
+   description: string;
    liveUrl?: string;
    repoUrl?: string;
-   techs?: Array<string>;
+   mainTechs: Array<KnownTech>;
+   otherTechs?: Array<string>;
    obstacles?: string;
    wins?: string;
    features?: Array<string>;
    responsibilities?: string;
 }
 
-interface InitialBuildObject extends BaseBuildObject {
+export interface InitialBuildObject extends BaseBuildObject {
    imgs: Array<BaseImgObject>;
 }
 

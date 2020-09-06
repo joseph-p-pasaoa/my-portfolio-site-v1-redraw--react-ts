@@ -1,4 +1,7 @@
-const endeavor = {
+import { InitialBuildObject } from '../buildsIndex';
+
+
+const endeavor: InitialBuildObject = {
    name: "Endeavor",
    buildName: 'endeavor',
    description: `A platform empowering organizations in managing their volunteer workforce amid organizational events seamlessly.`,
