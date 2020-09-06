@@ -69,11 +69,7 @@
                 }
             }
 
-            &:active {
-                position: relative;
-                top: 1px;
-                left: 1px;
-            }
+            @include active-shift();
         }
     }
 }
