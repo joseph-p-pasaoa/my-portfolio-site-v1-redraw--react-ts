@@ -74,10 +74,14 @@
     }
 
     .build-major-techs {
-        @include flex-straight(row);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: flex-start;
 
         .tech-icon {
-            flex: 0 1 100px;
+            flex: 0 1 60px;
+            margin: .5rem;
         }
     }
 
