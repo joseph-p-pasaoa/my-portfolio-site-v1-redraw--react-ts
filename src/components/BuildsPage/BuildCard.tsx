@@ -2,6 +2,7 @@ import React from 'react';
 import BuildCarousel from './BuildCarousel';
 
 import BuildButtons from './BuildButtons';
+import TechIcon from '../TechIcon';
 
 import { ProcessedBuildObject } from '../../data/buildsIndex';
 
@@ -51,10 +52,18 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
             liveUrl={build.liveUrl}
             repoUrl={build.repoUrl}
          />
+
          <BuildCarousel
             imgs={build.imgs}
             handleCarouselClick={handleCarouselClick}
          />
+
+         {/* BuildMajorTechs */}
+         <div className="build-major-techs">
+            {build.mainTechs.map(tech => {
+               return <TechIcon name={tech} />
+            })}
+         </div>
 
          <p className='description'>{build.description}</p>
 

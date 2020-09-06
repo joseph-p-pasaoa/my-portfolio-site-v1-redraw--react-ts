@@ -72,6 +72,14 @@
             @include active-shift();
         }
     }
+
+    .build-major-techs {
+        @include flex-straight(row);
+
+        .tech-icon {
+            flex: 0 1 100px;
+        }
+    }
 }
 
 .modal {
