@@ -80,6 +80,10 @@
             flex: 0 1 100px;
         }
     }
+
+    .test {
+        @include flex-straight(row, flex-start, flex-start);
+    }
 }
 
 .modal {

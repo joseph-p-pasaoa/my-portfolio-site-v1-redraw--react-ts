@@ -53,16 +53,18 @@ const BuildCard: React.FC<BuildCardProps> = (props) => {
             repoUrl={build.repoUrl}
          />
 
-         <BuildCarousel
-            imgs={build.imgs}
-            handleCarouselClick={handleCarouselClick}
-         />
+         <div className='test'>
+            <BuildCarousel
+               imgs={build.imgs}
+               handleCarouselClick={handleCarouselClick}
+            />
 
-         {/* BuildMajorTechs */}
-         <div className="build-major-techs">
-            {build.mainTechs.map(tech => {
-               return <TechIcon name={tech} />
-            })}
+            {/* BuildMajorTechs */}
+            <div className="build-major-techs">
+               {build.mainTechs.map(tech => {
+                  return <TechIcon name={tech} />
+               })}
+            </div>
          </div>
 
          <p className='description'>{build.description}</p>
