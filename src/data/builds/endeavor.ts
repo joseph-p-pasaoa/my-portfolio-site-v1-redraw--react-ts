@@ -19,11 +19,18 @@ const endeavor = {
    ],
    liveUrl: "https://endeavor-app.herokuapp.com/",
    repoUrl: "https://github.com/joseph-p-pasaoa/endeavor--fs-web--clone",
-   techs: [
-      "PostgreSQL 12.1",
-      "React 16.13.1",
-      "Node.js 12.5.0",
-      "Express.js 4.16.1",
+   mainTechs: [
+      "PostgreSQL",
+      "ReactJS",
+      "NodeJS",
+      "ExpressJS",
+      "SCSS",
+      "Javascript (ES5+)",
+      "Bootstrap",
+      "CSS3",
+      "HTML5"
+   ],
+   otherTechs: [
       "AWS-SDK 2.647.0",
       "SendGrid API v3 (external)",
       "Google Calendar (external)",
@@ -36,14 +43,10 @@ const endeavor = {
       "Chart.js 2.9.3",
       "Moment 2.24.0",
       "Query-String 6.12.1",
-      "Node-Sass (SCSS) 4.14.1",
       "React Epic Spinners 0.4.1",
       "React Icons 3.10.0",
       "Pg-promise 10.4.4",
       "Axios 0.19.2",
-      "JavaScript ES5+",
-      "CSS3",
-      "HTML5"
    ],
    role: "team build",
    obstacles: `From beginning to end, the three of us struggled to get a sense of how to be productive developers in the new COVID-19 lockdown era. We had to wrestle between adding more features and focusing on core functionality, wanting to learn new techs and avoiding adding too much complexity onto our plates. We had to figure out how to deal with not only our ambitiousness but secondly work/life balances stressed from being locked-down at home for months.`,
