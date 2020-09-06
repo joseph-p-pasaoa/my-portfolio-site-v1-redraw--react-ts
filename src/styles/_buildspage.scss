@@ -214,6 +214,21 @@
         margin-bottom: calc(#{$padding-for-titles} + #{$padding-for-indicators});
     }
 
+    &-control-prev,
+    &-control-next {
+        &:focus { opacity: .5; }
+        &:hover { opacity: .9; } // repeated here for hierarchy
+    }
+
+    &-control-prev:active {
+        top: 2px;
+        left: 1px;
+    }
+    &-control-next:active {
+        top: 2px;
+        right: -1px;
+    }
+
     &-control-prev-icon, &-control-next-icon {
         filter: var(--filter-int-dshadow) drop-shadow(4px 2px 3px #000);
     }
